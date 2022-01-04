@@ -1,0 +1,17 @@
+.row{
+    padding: 0%;
+}
+.col{
+    padding-right: 100%;
+}
+/* #info_img{
+    vertical-align: middle;
+} */
+.info_para{
+font-family: Roboto;
+font-style: normal;
+font-weight: 200;
+font-size: 20px;
+color:rgb(151, 148, 148);
+
+}
