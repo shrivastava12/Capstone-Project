@@ -1,21 +1,20 @@
-import React from 'react'
-import Features from '../Components/Features/Features'
-import Footer from '../Components/Footer'
-import Info from '../Components/Information/info'
+import React from "react";
+import Features from "../Components/Features/Features";
+import Footer from "../Components/Footer";
+// import Info from "../Components/Information/info";
 
-import '../App.css'
-import KuchBhi from '../Components/KuchBhi'
+import "../App.css";
+import KuchBhi from "../Components/KuchBhi";
 function Home() {
-    return (
-        <>
-        {/* <Info/> */}
-      
-        {/* <Info/> */}
-        <KuchBhi/>
-        <Features/>
-         <Footer/>
-        </>
-    )
+  return (
+    <>
+      {/* <Info/> */}
+      {/* <Info/> */}
+      <KuchBhi />
+      <Features />
+      <Footer />
+    </>
+  );
 }
 
-export default Home
+export default Home;
