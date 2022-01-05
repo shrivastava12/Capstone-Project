@@ -8,10 +8,11 @@ import KuchBhi from '../Components/KuchBhi'
 function Home() {
     return (
         <>
-        <Info/>
-        <Features/>
+        {/* <Info/> */}
+      
         {/* <Info/> */}
         <KuchBhi/>
+        <Features/>
          <Footer/>
         </>
     )

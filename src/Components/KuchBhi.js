@@ -1,9 +1,9 @@
 import React from 'react'
-import img from '../Images/pexels-mikotoraw-photographer-3769099.jpg'
+import img from '../Images/img1.png';
 function KuchBhi() {
     return (
         
-        <div className='container p-2' >
+        <div className='container p-2 mt-5 mb-5' >
             <div className='row'>
                 <div className='col-lg-6 p-2' style={{'height':'450px'}}>
                     <div className='text-center'>
@@ -11,7 +11,7 @@ function KuchBhi() {
               src={img}
               alt="info_img"
               classNameName=""
-             height={420}
+             height={400}
             />
                     </div>
               
