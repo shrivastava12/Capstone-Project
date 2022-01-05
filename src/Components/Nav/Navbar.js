@@ -5,9 +5,9 @@ import Navs from "./Navs";
 function Navbar() {
   return (
     <div  className="navbar_bg img-fluid" style={{height:'auto'}}>
-      <div className="navbar_div">
+      <div className="navbar_div ">
         <Navs />
-        <h1 className="navheading  h-100 d-flex justify-content-center align-items-center">
+        <h1 className="navheading  h-75 d-flex justify-content-center align-items-center">
           MUSIQUE
         </h1>
       </div>
