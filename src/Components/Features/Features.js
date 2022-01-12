@@ -1,4 +1,5 @@
 import React from "react";
+import {Link } from "react-router-dom";
 import { BsMusicNoteList } from "react-icons/bs";
 import { BsMusicPlayerFill } from "react-icons/bs";
 import { BsFillShareFill } from "react-icons/bs";
@@ -11,7 +12,10 @@ function Features() {
           <div className="col-sm-4 mt-2">
             <div style={{ display: "flex", flexDirection: "row" ,'justifyContent':'center'}}>
               <BsMusicNoteList size={40} />
-              <h2>Manage Songs</h2>
+              <Link to='/song'>
+                <h2>Manage Songs</h2>
+              </Link>
+              
             </div>
           </div>
           <div className="col-sm-4 mt-2">

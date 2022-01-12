@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
 
+import SongDetails from '../Components/Test';
 function SongDetail() {
     return (
-        <div>
-            
+        <div style={{
+            'backgroundColor': 'rgb(65, 54, 67)'
+          }}>
+            <SongDetails />
         </div>
     )
 }

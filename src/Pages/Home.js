@@ -5,14 +5,18 @@ import Footer from "../Components/Footer";
 
 import "../App.css";
 import KuchBhi from "../Components/KuchBhi";
+import Navbar from "../Components/Nav/Navbar";
+
 function Home() {
   return (
     <>
       {/* <Info/> */}
       {/* <Info/> */}
+      {/* <Navbar/> */}
       <KuchBhi />
       <Features />
       <Footer />
+     
     </>
   );
 }

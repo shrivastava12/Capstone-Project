@@ -1,0 +1,182 @@
+{
+  "Songs": [
+    {
+      "Id": 1,
+      "Album": "Shivers",
+      "Title": "Shivers",
+      "Songlength": "3:27",
+      "Singer": "Ed Sheeran",
+      "Img": "https://pbs.twimg.com/media/E-Rt4hNXIAUJbLm.jpg",
+      "Genre":"Pop"
+    },
+    {
+      "Id": 2,
+      "Album": "Easy on Me",
+      "Title": "Easy on Me",
+      "Songlength": "3:44",
+      "Singer": "Adele",
+      "Img": "https://i.ytimg.com/vi/X-yIEMduRXk/maxresdefault.jpg",
+      "Genre":"Pop"
+    },
+    {
+      "Id": 3,
+      "Album": "Future Nostaligia",
+      "Title": "Levitating",
+      "Songlength": "3:23",
+      "Singer": "Dua Lipa",
+      "Img": "https://articles.roland.com/wp-content/uploads/2021/06/32623628818_211100320a_o-scaled.jpg",
+      "Genre":"Pop"
+    },
+    {
+      "Id": 4,
+      "Album": "Atrangi Re",
+      "Title": "Chaka Chak",
+      "Songlength": "4:31",
+      "Singer": "A.R Rehman , Shreya Ghoshal",
+      "Img": "https://alllyricszone.in/wp-content/uploads/2021/11/FFQ9MefVEAMGR35.jpg",
+      "Genre":"Bollywood"
+
+    },
+    {
+      "Id": 5,
+      "Album": "Shershaah",
+      "Title": "Ranjha",
+      "Songlength": "3:48",
+      "Singer": "B Praak, Jasleen Royal, Anvita Dutt Guptan, Romy",
+      "Img": "https://i.ytimg.com/vi/tC1L9qjOzXs/maxresdefault.jpg",
+      "Genre":"Bollywood"
+    },
+    {
+      "Id": 6,
+      "Album": "Raees",
+      "Title": "Zaalima",
+      "Songlength": "4:48",
+      "Singer": "Harshdeep Kaur, Arijit Singh",
+      "Img": "https://i.ytimg.com/vi/qiglT5BZx58/maxresdefault.jpg"
+    },
+    {
+      "Id": 7,
+      "Album": "Pushpa: The Rise",
+      "Title": "Saami Saami",
+      "Songlength": "3:44",
+      "Singer": "Mounika Yadav",
+      "Img": "https://i.ytimg.com/vi/GfSgBLjFFSo/maxresdefault.jpg"
+    },
+    {
+      "Id": 8,
+      "Album": "Aadukalam",
+      "Title": "Yaathe Yaathe",
+      "Songlength": "5:44",
+      "Singer": "G. V. Prakash Kumar",
+      "Img": "https://i.ytimg.com/vi/blazm0XF9BQ/maxresdefault.jpg",
+      "Genre":"Feature film soundtrack"
+    },
+    {
+      "Id": 9,
+      "Album": "Schedule",
+      "Title": "Schedule",
+      "Songlength": "2:28",
+      "Singer": "Teggi Pannu",
+      "Img": "https://djpunjabpro.in/wp-content/uploads/Schedule-Tegi-Pannu-Manni-Sandhu-video-song-djpunjab.png",
+      "Genre":"Bhangra"
+    },
+    {
+      "Id": 10,
+      "Album": "MoonChild Era",
+      "Title": "Vibe",
+      "Songlength": "2:35",
+      "Singer": "Diljit Dosanjh",
+      "Img": "https://play-lh.googleusercontent.com/k5eHiOSJKPOYoHITJdF9reVhEQoMKBwk0EYknLlP6WtX40VtRi5nEaONVt5EGJOx9CQ",
+      "Genre":"HipHop/Bhangra"
+    },
+    {
+      "Id": 11,
+      "Album": " Daagdi Chaawl",
+      "Title": "Dhaga dhaga",
+      "Songlength": "4:28",
+      "Singer": "Aanandi Joshi, Harshavardhan Wavare",
+      "Img":"https://i.ytimg.com/vi/4glt4zXrR6A/maxresdefault.jpg"
+    },
+    {
+      "Id": 12,
+      "Album": "Kabhi Alvida Naa Kehna",
+      "Title": "Mitwa",
+      "Songlength": "4:28",
+      "Singer": "Shafqat Amanat Ali, Caralisa Monteiro, Shankar Mahadevan",
+      "Img": "https://i.ytimg.com/vi/ru_5PA8cwkE/maxresdefault.jpg",
+      "Genre":"Feature film soundtrack, Sufi rock"
+    },
+    {
+      "Id": 13,
+      "Album": "Dreamland",
+      "Title": "Heat Waves",
+      "Songlength": "3:28",
+      "Singer": "Glass Animals",
+      "Img": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b0/Glass_Animals_-_Heat_Waves.png/220px-Glass_Animals_-_Heat_Waves.png",
+      "Genre":"Pop,R&B"
+    },
+    {
+        "Id": 14,
+      "Album": "Music of the Spheres",
+      "Title": "My Universe",
+      "Songlength": "3:47",
+      "Singer": "Coldplay, BTS",
+      "Img": "https://upload.wikimedia.org/wikipedia/en/a/a2/Coldplay_-_My_Universe.png",
+      "Genre":"Synth-pop,pop rock"
+    },{
+        "Id": 15,
+      "Album": "Happier Than Ever",
+      "Title": "Happier Than Ever",
+      "Songlength": "4:45",
+      "Singer": "Billie Ellish",
+      "Img": "https://upload.wikimedia.org/wikipedia/en/thumb/4/45/Billie_Eilish_-_Happier_Than_Ever.png/220px-Billie_Eilish_-_Happier_Than_Ever.png",
+      "Genre": "Downtempo,electropop"
+      
+    },
+    {
+        "Id": 16,
+      "Album": "BE",
+      "Title": "Life Goes on",
+      "Songlength": "3:47",
+      "Singer": "BTS",
+      "Img": "https://upload.wikimedia.org/wikipedia/en/a/a2/BTS_-_Be_Cover.png",
+      "Genre":"Synth-pop,pop rock"
+    },
+    {
+      "Id": 17,
+      "Album": "Red-Taylor Swift",
+      "Title": "Red",
+      "Songlength": "4:47",
+      "Singer": "Taylor Swift",
+      "Img": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e8/Taylor_Swift_-_Red.png/220px-Taylor_Swift_-_Red.png",
+      "Genre":"Pop,country,rock"
+    },
+    {
+      "Id": 18,
+      "Album": "Fearless",
+      "Title": "White Horse",
+      "Songlength": "2:47",
+      "Singer": "Taylor Swift",
+      "Img": "https://upload.wikimedia.org/wikipedia/en/8/86/Taylor_Swift_-_Fearless.png",
+      "Genre":"Country pop"
+    },
+    {
+        "Id": 19,
+        "Album": "Beautiful eyes",
+        "Title": "Should've Said No",
+        "Songlength": "3:46",
+        "Singer": "Taylor Swift",
+        "Img": "https://upload.wikimedia.org/wikipedia/en/b/ba/Beautiful_Eyes.png",
+        "Genre":"Country"
+    },
+    {
+        "Id": 20,
+        "Album": "EP",
+        "Title": "Last Christmas",
+        "Songlength": "3:26",
+        "Singer": "Taylor Swift",
+        "Img": "https://upload.wikimedia.org/wikipedia/en/thumb/7/72/The_Taylor_Swift_Holiday_Collection.png/220px-The_Taylor_Swift_Holiday_Collection.png",
+        "Genre":"Christmas ,country pop"
+    }
+  ]
+}
