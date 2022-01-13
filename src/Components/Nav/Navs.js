@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.css";
-import logo from 'C:/Users/ayushee/Desktop/Capstone-project/src/Images/logo.png';
+import logo from '../../Images/logo.png';
 import { Link, Redirect } from "react-router-dom";
 function Navs() {
   // let handleClick = () =>{
@@ -8,9 +8,9 @@ function Navs() {
   // }
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-dark sticky-top">
+      <nav className="navbar bg-dark navbar-expand-lg navbar-dark sticky-top">
         <a className="navbar-brand" href="#">
-          <img  src={logo} width={100} height={100}/>
+          <img  src={logo} width={80} height={80}/>
         </a>
         <button
           className="navbar-toggler"

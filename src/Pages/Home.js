@@ -13,6 +13,7 @@ function Home() {
       {/* <Info/> */}
       {/* <Info/> */}
       {/* <Navbar/> */}
+      {/* banner hereeeeeee pleaseeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee */}
       <KuchBhi />
       <Features />
       <Footer />

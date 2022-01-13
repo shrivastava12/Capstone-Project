@@ -4,7 +4,7 @@ import Navs from "./Navs";
 //navbar component
 function Navbar() {
   return (
-    <div  className="navbar_bg img-fluid" style={{height:'auto'}}>
+    <div  className=" img-fluid" style={{height:'auto',color:'black'}}>
       <div className="navbar_div ">
         <Navs />
         <h1 className="navheading  h-75 d-flex justify-content-center align-items-center">

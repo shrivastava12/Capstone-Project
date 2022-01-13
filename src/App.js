@@ -10,11 +10,13 @@ import Profile from "./Pages/Profile";
 import Song from "./Pages/Song";
 import SongDetail from "./Pages/SongDetail";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Navs from "./Components/Nav/Navs";
 
 function App() {
   return (
     <Router>
-     <Navbar/>
+     {/* <Navbar/> */}
+     <Navs/>
       <Switch>
         <Route exact path='/' component={Home} />
         <Route exact path='/about' component={About} />
