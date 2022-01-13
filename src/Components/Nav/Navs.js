@@ -1,5 +1,6 @@
 import React from "react";
 import "./Navbar.css";
+import logo from 'C:/Users/ayushee/Desktop/Capstone-project/src/Images/logo.png';
 import { Link, Redirect } from "react-router-dom";
 function Navs() {
   // let handleClick = () =>{
@@ -7,9 +8,9 @@ function Navs() {
   // }
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-dark">
+      <nav className="navbar navbar-expand-lg navbar-dark sticky-top">
         <a className="navbar-brand" href="#">
-          Logo
+          <img  src={logo} width={100} height={100}/>
         </a>
         <button
           className="navbar-toggler"
@@ -45,9 +46,9 @@ function Navs() {
               </Link>
             </li>
             <li className="nav-item active">
-              <a className="nav-link" href="#" style={{ color: "white" }}>
+              <Link className="nav-link" href="#" style={{ color: "white" }} to='/playlist'>
                 Playlist
-              </a>
+              </Link>
             </li>
             <li className="nav-item active">
               <a className="nav-link " href="#" style={{ color: "white" }}>

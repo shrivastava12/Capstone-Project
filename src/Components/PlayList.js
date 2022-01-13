@@ -1,10 +1,14 @@
 import { useState } from 'react';
 import { AiOutlinePlayCircle } from 'react-icons/ai'
 import Modal from 'react-bootstrap/Modal';
-const Song = () => {
+
+
+const PlayList = () => {
+
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+
     return (
         <div style={{ 'backgroundColor': 'rgb(65, 54, 67)', 'height': '100vh' }}>
             <div className="container ">
@@ -124,4 +128,4 @@ const Song = () => {
     )
 }
 
-export default Song;
+export default PlayList;
