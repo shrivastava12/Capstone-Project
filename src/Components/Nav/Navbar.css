@@ -3,20 +3,24 @@
   margin: 0;
   padding: 0;
 }
+.navbar{
+  height: 12vh;
+}
 .navbar_div {
   height: 89vh;
 }
 .navbar_bg{
-  background: url("../../Images/pexels-dayvison-de-oliveira-silva-5733607.jpg");
+  background: url("../../Images/background2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  backface-visibility: unset;
 }
 .navheading {
   font-family: Roboto;
   font-style: normal;
   font-weight: 900;
   font-size: 10vw;
-  color:black;
+  color:white;
 }
 nav {
 }

@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import '../Components/Nav/Navbar.css';
 
 export default function Banner() {
-    return (
-        <div>sdfsd 
-            
-        </div>
-    )
+  return (
+    <div className="navbar_bg " style={{ height: "auto"}}>
+      <div className="navbar_div ">
+        <h1 className="navheading  h-100 d-flex justify-content-center align-items-center">
+          MUSIQUE
+        </h1>
+      </div>
+    </div>
+  );
 }

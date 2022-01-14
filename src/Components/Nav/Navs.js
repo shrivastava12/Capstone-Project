@@ -10,7 +10,7 @@ function Navs() {
     <>
       <nav className="navbar bg-dark navbar-expand-lg navbar-dark sticky-top">
         <a className="navbar-brand" href="#">
-          <img  src={logo} width={80} height={80}/>
+          <img  src={logo} width={70} height={70}/>
         </a>
         <button
           className="navbar-toggler"
@@ -30,9 +30,9 @@ function Navs() {
         >
           <ul className="navbar-nav mx-auto">
             <li className="nav-item active">
-              <a className="nav-link" href="#" style={{ color: "white" }}>
+              <Link className="nav-link" href="#" style={{ color: "white" }} to='/'>
                 Home <span className="sr-only">(current)</span>
-              </a>
+              </Link>
             </li>
 
             <li className="nav-item active">

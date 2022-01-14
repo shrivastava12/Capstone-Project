@@ -11,11 +11,10 @@ function KuchBhi() {
             </div>
           </div>
           <div className="col-lg-6 mt-5" style={{ height: "auto" }}>
-            <p className=" text-center">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.
+            <p className=" text-center" style={{'fontSize':'2.2rem'}}>
+            “Music is what tells us that the human race is greater than we realize.”
             </p>
+            <p className=" text-right" style={{'fontSize':'1.3rem'}}>― Napoleon Bonaparte</p>
           </div>
         </div>
       </div>
