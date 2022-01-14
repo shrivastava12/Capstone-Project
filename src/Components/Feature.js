@@ -2,11 +2,11 @@ import './Feature.css';
 const Feature = () => {
   return (
     <div>
-      <div class=" py-3 service-13">
+      <div class=" py-3  mt-4 service-13">
         <div class="container">
-        <h1 class="display-3">Display 3</h1>
+        <h1 class="text-center mt-4" style={{'fontWeight':'bold','fontSize':'40px'}}>Feature</h1>
           {/* <!-- Row  --> */}
-          <div class="row">
+          <div class="row mt-5">
             {/* <!-- Column --> */}
             <div class="col-lg-4 wrap-service13-box">
               <div class="card card-shadow border-0 ">
