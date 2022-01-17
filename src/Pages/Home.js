@@ -7,7 +7,7 @@ import Banner from "../Components/Banner";
 import "../App.css";
 import KuchBhi from "../Components/KuchBhi";
 import Navbar from "../Components/Nav/Navbar";
-import Feature from "../Components/Feature";
+
 
 function Home() {
   return (
