@@ -35,7 +35,7 @@ function PlayList() {
             <div class="container carousel-inner no-padding">
               <div class="carousel-item active">
                 <div class="col-xs-3 col-sm-3 col-md-3">
-                  <div class="card">
+                  <div class="card" >
                     <img
                       height={200}
                       class="card-img-top"
@@ -51,7 +51,7 @@ function PlayList() {
                   </div>
                 </div>
                 <div class="col-xs-3 col-sm-3 col-md-3">
-                  <div class="card">
+                  <div class="card" onClick={()=>alert('its working')}>
                     <img
                       height={200}
                       class="card-img-top"
