@@ -17,7 +17,7 @@ function Home() {
       {/* <Navbar/> */}
       <Banner/>
       <KuchBhi />
-      <Feature/>
+      <Features/>
       <Footer />
       
      

@@ -7,14 +7,17 @@
     height:auto;
   }
   body .carousel-indicators li{
-    background-color:red;
+   
   }
   body .carousel-indicators{
     bottom: 0;
+    
   }
+  
   body .carousel-control-prev-icon,
-  body .carousel-control-next-icon{
-    background-color:red;
+  body .carousel-control-next-icon {
+    padding: 1rem;
+    background-color: gray;
   }
   body .no-padding{
     padding-left: 0;
