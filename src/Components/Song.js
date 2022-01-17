@@ -1,12 +1,13 @@
 import { useState } from 'react';
 import { AiOutlinePlayCircle } from 'react-icons/ai'
 import Modal from 'react-bootstrap/Modal';
+import { Link } from 'react-router-dom';
 const Song = () => {
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
     return (
-        <div style={{ 'backgroundColor': 'rgb(65, 54, 67)', 'height': '100vh' }}>
+        <div style={{ 'backgroundColor': '#fff', 'height': '100vh' }}>
             <div className="container ">
                 <div style={{ 'display': 'flex', 'alignItems': 'center', 'justifyContent': 'space-between' }}>
                     <div>
@@ -28,7 +29,7 @@ const Song = () => {
                                 <hr style={{ 'backgroundColor': '#fff', 'marginTop': '-1.3px' }}></hr>
                                 <div style={{ 'display': 'flex', 'justifyContent': 'space-between' }}>
                                     <AiOutlinePlayCircle size={40} />
-                                    <button className='btn btn-sm btn-info '>View more</button>
+                                    <Link  to='/song-detail'><button className='btn btn-sm btn-info '>View more</button></Link>
                                 </div>
 
                             </div>

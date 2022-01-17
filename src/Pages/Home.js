@@ -18,7 +18,7 @@ function Home() {
       <Banner/>
       <KuchBhi />
       <Features/>
-      <Footer />
+      {/* <Footer /> */}
       
      
     </>
