@@ -71,7 +71,7 @@ const SongDetail = () => {
 
               </form>
               <div className='mt-3 p-2' style={{'float':'right'}}>
-          <button>Submit</button>
+          <button className='btn btn-success btn-small'>Submit</button>
       </div>
             </div>
           </div>

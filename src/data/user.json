@@ -1,0 +1,31 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "abc@gmail.com",
+      "password": "1234",
+      "first_name": "Pankaj",
+      "last_name": "shrivastava",
+      "location": "Earth",
+      "mobile_no": "7479530699"
+    },
+    {
+      "id": "2",
+      "email": "aayushe@gmail.com",
+      "password": "1234",
+      "first_name": " Ayushee",
+      "last_name": " Shrivastava",
+      "location": " Indore",
+      "mobile_no": " 8581045392"
+    },
+    {
+      "id": "3",
+      "email": " harish@gmail.com",
+      "password": " 34234",
+      "first_name": " Harish",
+      "last_name": " Kumar",
+      "location": " Chatishgarh",
+      "mobile_no": " 324823489"
+    }
+  ]
+}

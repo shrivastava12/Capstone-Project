@@ -2,10 +2,12 @@ import React from "react";
 import "./Navbar.css";
 import logo from '../../Images/logo.png';
 import { Link, Redirect } from "react-router-dom";
-function Navs() {
+import { connect } from "react-redux";
+function Navs({isAuthenticated,user}) {
   // let handleClick = () =>{
   //     return <Redirect to='/login'/>
   // }
+  console.log('user',user.email)
   return (
     <>
       <nav className="navbar bg-dark navbar-expand-lg navbar-dark sticky-top">
@@ -46,23 +48,33 @@ function Navs() {
               </Link>
             </li>
             <li className="nav-item active">
-              <Link className="nav-link" href="#" style={{ color: "white" }} to='/playlist'>
+              <Link className="nav-link" style={{ color: "white" }} to='/playlist'>
                 Playlist
               </Link>
             </li>
             <li className="nav-item active">
-              <a className="nav-link " href="#" style={{ color: "white" }}>
+              <Link className="nav-link " style={{ color: "white" }} to='/contact'>
                 Contact Us
-              </a>
+              </Link>
             </li>
           </ul>
-          <Link to="/login">
+          {
+            isAuthenticated ? (
+             <p style={{'color':'#fff'}}>{user.email}</p> 
+            ) :  <Link to="/login">
             <button className="btn btn-outline-light">Login/SignUp</button>
           </Link>
+          }
+         
         </div>
       </nav>
     </>
   );
 }
 
-export default Navs;
+const mapStateToProps =  state => ({
+  isAuthenticated:state.auth.isAuthenticated,
+  user:state.auth.user
+})
+
+export default connect(mapStateToProps,{})(Navs);

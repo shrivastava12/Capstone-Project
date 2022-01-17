@@ -11,7 +11,7 @@ function PlayList() {
 
   return (
   
-    <div className="p-2" style={{ backgroundColor: "#fff" }}>
+    <div className="p-5" style={{ backgroundColor: "#fff" }}>
       
   
   <div style={{'display':'flex','justifyContent':'space-between'}}> <h2 className="" style={{'color':'black'}}>Your PlayList</h2>

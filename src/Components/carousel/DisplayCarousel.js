@@ -15,11 +15,11 @@ function DisplayCarousel() {
                 <div >
                     <div style={{padding: 8}}>
                         <img src="https://images.pexels.com/photos/1540319/pexels-photo-1540319.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="placeholder" style={{width: '100%'}} />
-                       <div  className='bg-dark p-2' style={{'display':'flex','flexDirection':'row','justifyContent':'space-between'}}>
-                       <h3 class="" style={{ color: "#fff" }}>
-                        Playlist Name
-                      </h3>
-                      <p style={{ color: "#fff" }}>By username</p>
+                       <div  className='bg-dark  p-2' style={{'display':'flex','flexDirection':'row','justifyContent':'space-between'}}>
+                       <h2 className='text-center' style={{ color: "#fff",fontSize:'24px' }}>
+                       MyFirst PlayList
+                      </h2>
+                      <p className="text-muted" style={{ color: "#fff" }}>Alex</p>
                        </div>
                        
                     </div>
