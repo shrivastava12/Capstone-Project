@@ -1,6 +1,7 @@
 import React from 'react';
 
-import SongDetails from '../Components/Test';
+import SongDetails from '../Components/SongDetail';
+
 function SongDetail() {
     return (
         <div style={{
