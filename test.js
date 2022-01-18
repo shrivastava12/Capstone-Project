@@ -19,8 +19,10 @@ const abc = [
   },
 ];
 
-console.log( abc.find(ele => ele.email === "aayushe@gmail.com" && ele.password === "1234") )
+// console.log( abc.find(ele => ele.email === "aayushe@gmail.com" && ele.password === "1234") )
 
+const bcd =  new Date();
+console.log(bcd.getFullYear()+bcd.getMilliseconds())
 
 // const findUser =  (email,password) => {
 //     abc.filter(ele => ele.email === email && ele.password === password)

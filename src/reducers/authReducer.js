@@ -1,4 +1,4 @@
-import { LOGIN_FAIL, LOGIN_SUCCESS, REGISTER_SUCCESS } from "../actions/Type";
+import { LOGIN_FAIL, LOGIN_SUCCESS, LOGOUT_SUCCESS, REGISTER_SUCCESS } from "../actions/Type";
 
 const initialState =  {
    
@@ -24,6 +24,13 @@ export default function(state = initialState,action){
                 user:payload
             }
         case LOGIN_FAIL:
+            return{
+                ...state,
+                isAuthenticated:false,
+                user:localStorage.removeItem('user')
+            }
+        case LOGOUT_SUCCESS:
+
             return{
                 ...state,
                 isAuthenticated:false,

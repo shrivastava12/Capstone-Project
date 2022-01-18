@@ -26,6 +26,15 @@
       "last_name": " Kumar",
       "location": " Chatishgarh",
       "mobile_no": " 324823489"
+    },
+    {
+      "id": 2546,
+      "email": "test@gmail.com",
+      "password": "1234",
+      "first_name": "test",
+      "last_name": "test",
+      "location": "testing club",
+      "mobile_no": "734523432443"
     }
   ]
 }

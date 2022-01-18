@@ -1,13 +1,15 @@
-import { LOGIN_FAIL, LOGIN_SUCCESS, REGISTER_SUCCESS } from "./Type";
+import {  LOGIN_SUCCESS, LOGOUT_SUCCESS, REGISTER_SUCCESS } from "./Type";
 
 import Axios from 'axios';
 
 
 export const register = (email,password,fname,lname,location,mobileNo) => dispatch => {
     console.log('inside the registerrrrrrr');
+    const date =  new Date();
+    const id =  date.getFullYear()+date.getMilliseconds()
     try{
-        Axios.post('http://localhost:3004/users/',{
-            id:'3',
+        Axios.post('http://localhost:8000/users/',{
+            id:id,
             email:email,
             password:password,
             first_name:fname,
@@ -26,14 +28,13 @@ export const register = (email,password,fname,lname,location,mobileNo) => dispat
     }catch(e){
         console.log(e)
     }
-
 }
 
 
 export const login =  (email,password) => dispatch => {
     console.log('inside the login');
     try{
-        Axios.get('http://localhost:3004/users/').then(res => {
+        Axios.get('http://localhost:8000/users/').then(res => {
             console.log(res.data);
             if(res.status === 200){
                 const abc =  res.data;
@@ -48,4 +49,13 @@ export const login =  (email,password) => dispatch => {
     }catch(e){
         console.log('errr',e)
     }
+}
+
+export const logout = () => dispatch => {
+    console.log('logout')
+    
+    dispatch({
+        type:LOGOUT_SUCCESS
+    })
+    window.location.reload();
 }

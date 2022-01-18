@@ -3,11 +3,13 @@ import "./Navbar.css";
 import logo from '../../Images/logo.png';
 import { Link, Redirect } from "react-router-dom";
 import { connect } from "react-redux";
-function Navs({isAuthenticated,user}) {
+import { logout } from "../../actions/authAction";
+
+function Navs({isAuthenticated,user,logout}) {
   // let handleClick = () =>{
   //     return <Redirect to='/login'/>
-  // }
-  console.log('user',user.email)
+  // // }
+  // console.log('user',user.email)
   return (
     <>
       <nav className="navbar bg-dark navbar-expand-lg navbar-dark sticky-top">
@@ -59,8 +61,9 @@ function Navs({isAuthenticated,user}) {
             </li>
           </ul>
           {
-            isAuthenticated ? (
+            isAuthenticated ? (<div style={{'display':'flex'}}>
              <p style={{'color':'#fff'}}>{user.email}</p> 
+             <button style={{'height':'28px'}} className="btn btn-light btn-sm ml-2" onClick={logout}>Logout</button></div>
             ) :  <Link to="/login">
             <button className="btn btn-outline-light">Login/SignUp</button>
           </Link>
@@ -77,4 +80,4 @@ const mapStateToProps =  state => ({
   user:state.auth.user
 })
 
-export default connect(mapStateToProps,{})(Navs);
+export default connect(mapStateToProps,{logout})(Navs);
