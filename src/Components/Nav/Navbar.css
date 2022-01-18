@@ -4,7 +4,7 @@
   padding: 0;
 }
 .navbar{
-  height: 12vh;
+  
 }
 .navbar_div {
   height: 89vh;
@@ -23,7 +23,8 @@
   color:white;
 }
 
-nav {
+.navbar-collapse{
+  color: black;
 }
 /* li {
   position: relative;
@@ -37,5 +38,5 @@ nav {
   font-weight: bold;
   font-size: 24px;
   line-height: 28px;
-  color: red;
+ 
 }

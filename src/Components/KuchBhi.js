@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../Images/img1.png";
+import img from "../Images/Music.svg";
 function KuchBhi() {
   return (
     <div style={{ height: "auto" }}>

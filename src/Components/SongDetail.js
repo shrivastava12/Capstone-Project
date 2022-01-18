@@ -179,7 +179,7 @@ const SongDetail = ({ isAuthenticated }) => {
                   style={{ border: "2px solid #F6F524", boxShadow: "" }}
                 >
                   <div className="col-lg-6 p-3">
-                    <span>Album</span>
+                    <span style={{color:'black'}}>Album</span>
                     <input
                       type="text"
                       placeholder="album"
@@ -195,7 +195,7 @@ const SongDetail = ({ isAuthenticated }) => {
                         width: "100%",
                       }}
                     />
-                    <span>Singer</span>
+                    <span style={{color:'black'}}>Singer</span>
                     <input
                       type="text"
                       disabled={isEdit}
@@ -212,7 +212,7 @@ const SongDetail = ({ isAuthenticated }) => {
                     />
                   </div>
                   <div className="col-lg-6  p-3">
-                    <span>Song Length</span>
+                    <span style={{color:'black'}}>Song Length</span>
                     <input
                       type="text"
                       placeholder="song length"
@@ -228,7 +228,7 @@ const SongDetail = ({ isAuthenticated }) => {
                         width: "100%",
                       }}
                     />
-                    <span>Genre</span>
+                    <span style={{color:'black'}}>Genre</span>
                     <input
                       type="text"
                       placeholder="Genre"
