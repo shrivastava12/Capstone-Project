@@ -1,0 +1,113 @@
+{
+  "playlist": [
+    {
+      "playlistname": "newOne",
+      "playlistItem": [
+        {
+          "id": 1,
+          "songname": "anyting",
+          "singer": "KK"
+        },
+        {
+          "id": 2,
+          "songname": "anyting",
+          "singer": "KK"
+        },
+        {
+          "id": 3,
+          "songname": "anyting",
+          "singer": "Ed shreen"
+        },
+        {
+          "id": 4,
+          "songname": "kuchbhi",
+          "singer": "Swift taylor"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "playlistname": "newTwo",
+      "playlistItem": [
+        {
+          "id": 1,
+          "songname": "anyting",
+          "singer": "KK"
+        },
+        {
+          "id": 2,
+          "songname": "anyting",
+          "singer": "KK"
+        },
+        {
+          "id": 3,
+          "songname": "anyting",
+          "singer": "Ed shreen"
+        },
+        {
+          "id": 4,
+          "songname": "kuchbhi",
+          "singer": "Swift taylor"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "playlistname": "newThree",
+      "playlistItem": [
+        {
+          "id": 1,
+          "songname": "anyting",
+          "singer": "KK"
+        },
+        {
+          "id": 2,
+          "songname": "anyting",
+          "singer": "KK"
+        },
+        {
+          "id": 3,
+          "songname": "anyting",
+          "singer": "Ed shreen"
+        },
+        {
+          "id": 4,
+          "songname": "kuchbhi",
+          "singer": "Swift taylor"
+        }
+      ],
+      "id": 3
+    },
+    {
+      "playlistname": "newFour",
+      "playlistItem": [
+        {
+          "id": 1,
+          "songname": "anyting",
+          "singer": "KK"
+        },
+        {
+          "id": 2,
+          "songname": "anyting",
+          "singer": "KK"
+        },
+        {
+          "id": 3,
+          "songname": "anyting",
+          "singer": "Ed shreen"
+        },
+        {
+          "id": 4,
+          "songname": "kuchbhi",
+          "singer": "Swift taylor"
+        }
+      ],
+      "id": 4
+    },
+    {
+      "id": 2027,
+      "playlistname": "newFive",
+      "playlistItem": []
+    }
+  ]
+}
