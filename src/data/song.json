@@ -176,6 +176,15 @@
       "Singer": "Taylor Swift",
       "Img": "https://upload.wikimedia.org/wikipedia/en/thumb/7/72/The_Taylor_Swift_Holiday_Collection.png/220px-The_Taylor_Swift_Holiday_Collection.png",
       "Genre": "Christmas ,country pop"
+    },
+    {
+      "id": 2430,
+      "Album": "testing",
+      "Title": "testing",
+      "Songlength": "3.4",
+      "Singer": "testing",
+      "Img": "https://picsum.photos/200",
+      "Genre": "Pop"
     }
   ]
 }

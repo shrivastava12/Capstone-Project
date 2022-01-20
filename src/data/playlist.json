@@ -3,8 +3,7 @@
     {
       "id": 1,
       "playlistname": "newOne",
-      "count": 8,
-     
+      "count": 10,
       "user": "Ayushee shrivastava",
       "playlistItem": [
         {
@@ -30,7 +29,7 @@
     {
       "id": 2,
       "playlistname": "newTwo",
-      "count": 6,
+      "count": 7,
       "user": "Ayushee shrivastava",
       "playlistItem": [
         {
@@ -68,7 +67,7 @@
     {
       "playlistname": "newThree",
       "user": "Ayushee shrivastava",
-      "count": 5,
+      "count": 7,
       "playlistItem": [
         {
           "id": 1,
@@ -98,8 +97,10 @@
       "id": 3
     },
     {
-      
       "playlistname": "newFour",
+      "id": 4,
+      "user": "Pankaj",
+      "count": 14,
       "playlistItem": [
         {
           "id": 1,
@@ -132,8 +133,32 @@
           "album": "MoonChild Era"
         }
       ]
-     
-    
+    },
+    {
+      "id": 2084,
+      "playlistname": "honey singh",
+      "playlistItem": [
+        {
+          "id": 1,
+          "songname": "Shivers S",
+          "singer": "Ed Sheeran",
+          "album": "Shivers"
+        },
+        {
+          "id": 3,
+          "songname": "Levitating",
+          "singer": "Dua Lipa",
+          "album": "Future Nostaligia"
+        },
+        {
+          "id": 10,
+          "songname": "Vibe",
+          "singer": "Diljit Dosanjh",
+          "album": "MoonChild Era"
+        }
+      ],
+      "count": 3,
+      "user": "Pankajshrivastava"
     }
   ]
 }

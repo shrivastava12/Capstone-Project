@@ -5,8 +5,10 @@ import DisplayCarousel from "../Components/carousel/DisplayCarousel";
 import Modal from 'react-bootstrap/Modal';
 import  Axios  from "axios";
 import { useHistory } from "react-router-dom";
+import CarouselOne from "../Components/carousel/CarouselOne";
+import Charts from "../Components/Charts";
 
-function PlayList({loadPlayList,playlists,isAuthenticated}) {
+function PlayList({loadPlayList,playlists,isAuthenticated,user}) {
 
   useEffect(() => {
     loadPlayList();
@@ -34,11 +36,17 @@ function PlayList({loadPlayList,playlists,isAuthenticated}) {
       e.preventDefault();
       Axios.post('http://localhost:7000/playlist',{
         id:id,
+        count:0,
         playlistname:name,
-        playlistItem:[]
+        playlistItem:[],
+        user:user.first_name + user.last_name,
+        
       }).then((res) => {
         console.log(res.data)
-        alert(res.status)
+        loadPlayList();
+        handleClose();
+        alert('PlayList added Successfully')
+        
       }).catch((err) => {
         console.log(err)
       })
@@ -50,16 +58,18 @@ function PlayList({loadPlayList,playlists,isAuthenticated}) {
     <div className="p-5" style={{ backgroundColor: "#fff" }}>
       
   
-  <div style={{'display':'flex','justifyContent':'space-between'}}> <h2 className="" style={{'color':'black'}}>Your PlayList</h2>
-    <button className="btn btn-info btn-sm" onClick={handleShow} >Create PlayList</button>
+  <div style={{'display':'flex','justifyContent':'space-between'}}> <h2 className="" style={{'color':'black'}}></h2>
+    <button className="btn btn-dark " onClick={handleShow} >Create PlayList</button>
     </div>
+ 
     {
-      isPlayList ? <DisplayCarousel playlists={playlists} /> : <h2 style={{'textAlign':'center','color':'yellow'}}>Create Your PlayList!</h2>
+      isPlayList ?  <CarouselOne  playlists={playlists} /> : <h2 style={{'textAlign':'center','color':'yellow'}}>Create Your PlayList!</h2>
     }
      
-    
-     <h2 className="p-3" style={{'color':'black'}}>Top Most</h2>
-     <DisplayCarousel playlists={playlists} />
+{/*     
+     <h2 className="p-3" style={{'color':'black'}}>Top Most</h2> */}
+
+     <Charts playlists={playlists} />
     </div>
     <Modal
                 show={show}
@@ -79,7 +89,7 @@ function PlayList({loadPlayList,playlists,isAuthenticated}) {
                            
                            
                             <input required className="form-control" value={name} onChange={e => setName(e.target.value)}  type="text" placeholder="Playlist name" style={{width:'140%'}} />
-                         
+                            <p className="mt-1">user: {user.first_name + "  " +user.last_name}</p>
                         </form>
                     </div>
                 </Modal.Body>
@@ -97,7 +107,8 @@ function PlayList({loadPlayList,playlists,isAuthenticated}) {
 
 const mapStateToProps =  state => ({
   playlists:state.playlistReduce.playlist,
-  isAuthenticated:state.auth.isAuthenticated
+  isAuthenticated:state.auth.isAuthenticated,
+  user:state.auth.user
 })
 
 export default connect(mapStateToProps,{loadPlayList})(PlayList);

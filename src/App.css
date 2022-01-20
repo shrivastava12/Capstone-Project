@@ -1,4 +1,9 @@
-body{
-  margin: 0;
-  padding: 0;
+.imgOne {
+  background-image: url('https://www.counterpointresearch.com/wp-content/uploads/2020/04/Music-Streaming-CY-2019-Featured-Image-e1585745100216.jpg');
+  height: 300px;
+ 
+  background-size:cover;
+  background-repeat: no-repeat;
+ border-radius: 5%;
+
 }

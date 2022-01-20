@@ -23,52 +23,19 @@ function DisplayCarousel({ playlists }) {
   console.log("playlist", playlists);
   return (
     <div
-      className="display container-lg-12"
+      className="display container"
      
     >
       <Carousel show={3}>
         {playlists.map((item) => (
           <div key={item.id} >
-            <div class="card" style={{width:'25rem'}}>
+            <div >
             <img
                 src="https://www.incimages.com/uploaded_files/image/1920x1080/getty_860462652_396419.jpg"
                 style={{ width: "100%", height: "200px" }}
               />
-              <div class="card-body" style={{
-                  display: "flex",
-                  flexDirection: "row",
-                  justifyContent:'space-between',
-                  backgroundColor: "#214c8f",
-                }}>
-                <div className=" card-body col-lg-12" style={{
-                  display: "flex",
-                  flexDirection: "row",
-                  justifyContent:'space-between',
-                  backgroundColor: "#214c8f",
-                }}>
-
-                <h2
-                  className="text-center"
-                  style={{ color: "#fff", fontSize: "20px" }}
-                >
-                  {item.playlistname}
-                </h2>
-                <p className="text-muted" style={{ color: "#fff" }}>
-                  {item.user}
-                </p>
-                <button
-                  onClick={() => frequentlyVisited(item.id, item.count)}
-                  style={{ color: "#fff" }}
-                  className="btn btn-info btn-sm"
-                >
-                  View more
-                </button>
-               
-               
-                </div>
-                
-              
-              </div>
+             
+          
             </div>
            
           </div>

@@ -26,7 +26,7 @@ const PlaylistDetail = ({ songs, loadSong,isAuthenticated }) => {
   const [message, setMessage] = useState("");
 
 // It is for recommendation add button
-  const addSongToPlayList =  (idSong,title,singer,album) => {
+  const addSongToPlayList =  (idSong,title,singer,album,user) => {
 
     if(isAuthenticated){
     const abcd = [
@@ -38,6 +38,8 @@ const PlaylistDetail = ({ songs, loadSong,isAuthenticated }) => {
       id: id,
       playlistname: data.playlistname,
       playlistItem: abcd,
+      count:data.count,
+      user:data.user
     })
       .then((res) => {
         if (res.status === 200) {
@@ -53,6 +55,7 @@ const PlaylistDetail = ({ songs, loadSong,isAuthenticated }) => {
       history.push("/login")
     }
   }
+
   const updatePlayList = () => {
 
     if(isAuthenticated){
@@ -66,6 +69,8 @@ const PlaylistDetail = ({ songs, loadSong,isAuthenticated }) => {
       id: id,
       playlistname: data.playlistname,
       playlistItem: abcd,
+      count:data.count,
+      user:data.user
     })
       .then((res) => {
         if (res.status === 200) {
@@ -156,7 +161,7 @@ const PlaylistDetail = ({ songs, loadSong,isAuthenticated }) => {
                 {data.playlistname}
               </h2>
               <p className="mt-3" style={{ color: "white" }}>
-                Ayushee shrivastava :
+               {data.user}:
                 <span style={{ color: "skyblue" }}>
                   {" "}
                   {newArray.length} songs
@@ -287,7 +292,8 @@ const PlaylistDetail = ({ songs, loadSong,isAuthenticated }) => {
 
 const mapStateToProps = (state) => ({
   songs: state.songReduce.songs,
-  isAuthenticated: state.auth.isAuthenticated
+  isAuthenticated: state.auth.isAuthenticated,
+  user:state.auth.user,
 });
 
 export default connect(mapStateToProps, { loadSong })(PlaylistDetail);
