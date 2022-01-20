@@ -4,20 +4,28 @@ import { loadPlayList } from "../actions/playlistAction";
 import DisplayCarousel from "../Components/carousel/DisplayCarousel";
 import Modal from 'react-bootstrap/Modal';
 import  Axios  from "axios";
+import { useHistory } from "react-router-dom";
 
-function PlayList({loadPlayList,playlists}) {
+function PlayList({loadPlayList,playlists,isAuthenticated}) {
 
   useEffect(() => {
     loadPlayList();
   },[])
 
+  const history = useHistory();
+  
   const [isPlayList,setIsPlayList] = useState(true);
   const [name,setName] = useState('');
   const [show,setShow] = useState(false);
   const handleClose =  () => setShow(false);
 
   const handleShow =  () => {
-      setShow(true);
+      if(isAuthenticated){
+        setShow(true);
+      }else{
+        history.push("/login")
+      }
+     
   }
 
   const onSubmit = e => {
@@ -70,7 +78,7 @@ function PlayList({loadPlayList,playlists}) {
                         <form>
                            
                            
-                            <input className="form-control" value={name} onChange={e => setName(e.target.value)}  type="text" placeholder="Playlist name" style={{width:'140%'}} />
+                            <input required className="form-control" value={name} onChange={e => setName(e.target.value)}  type="text" placeholder="Playlist name" style={{width:'140%'}} />
                          
                         </form>
                     </div>
@@ -89,6 +97,7 @@ function PlayList({loadPlayList,playlists}) {
 
 const mapStateToProps =  state => ({
   playlists:state.playlistReduce.playlist,
+  isAuthenticated:state.auth.isAuthenticated
 })
 
 export default connect(mapStateToProps,{loadPlayList})(PlayList);

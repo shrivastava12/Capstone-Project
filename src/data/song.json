@@ -2,7 +2,7 @@
   "songs": [
     {
       "Album": "Shivers",
-      "Title": "Shivers s",
+      "Title": "Shivers ",
       "Songlength": "3:27",
       "Singer": "Ed Sheeran",
       "Img": "https://pbs.twimg.com/media/E-Rt4hNXIAUJbLm.jpg",
@@ -10,13 +10,13 @@
       "id": 1
     },
     {
-      "id": 2,
       "Album": "Easy on Me",
       "Title": "Easy on Me",
       "Songlength": "3:44",
       "Singer": "Adele",
       "Img": "https://i.ytimg.com/vi/X-yIEMduRXk/maxresdefault.jpg",
-      "Genre": "Pop"
+      "Genre": "Pop",
+      "id": 2
     },
     {
       "Album": "Future Nostaligia",

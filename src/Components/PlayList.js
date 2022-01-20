@@ -90,26 +90,26 @@ const PlayList = () => {
                         <form>
                             <div class="form-row">
                                 <div class="col">
-                                    <input type="text" class="form-control" placeholder=" Song title" />
+                                    <input     required type="text" class="form-control" placeholder=" Song title" />
                                 </div>
                                 <div class="col">
-                                    <input type="text" class="form-control" placeholder="Album" />
-                                </div>
-                            </div>
-                            <div class="form-row mt-2">
-                                <div class="col">
-                                    <input type="text" class="form-control" placeholder="Singer" />
-                                </div>
-                                <div class="col">
-                                    <input type="text" class="form-control" placeholder="Song Length" />
+                                    <input     required type="text" class="form-control" placeholder="Album" />
                                 </div>
                             </div>
                             <div class="form-row mt-2">
                                 <div class="col">
-                                    <input type="text" class="form-control" placeholder="Genre" />
+                                    <input    required type="text" class="form-control" placeholder="Singer" />
                                 </div>
                                 <div class="col">
-                                    <input type="text" class="form-control" placeholder="Image url" />
+                                    <input type="text"     required class="form-control" placeholder="Song Length" />
+                                </div>
+                            </div>
+                            <div class="form-row mt-2">
+                                <div class="col">
+                                    <input type="text"     required class="form-control" placeholder="Genre" />
+                                </div>
+                                <div class="col">
+                                    <input type="text"     required class="form-control" placeholder="Image url" />
                                 </div>
                             </div>
                          

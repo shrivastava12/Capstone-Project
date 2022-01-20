@@ -1,113 +1,131 @@
 {
   "playlist": [
     {
+      "id": 1,
       "playlistname": "newOne",
+      "count": 7,
       "playlistItem": [
-        {
-          "id": 1,
-          "songname": "anyting",
-          "singer": "KK"
-        },
-        {
-          "id": 2,
-          "songname": "anyting",
-          "singer": "KK"
-        },
         {
           "id": 3,
           "songname": "anyting",
-          "singer": "Ed shreen"
+          "singer": "Ed shreen",
+          "album": "Easy on Me"
         },
         {
-          "id": 4,
-          "songname": "kuchbhi",
-          "singer": "Swift taylor"
+          "id": 6,
+          "songname": "Zaalima",
+          "singer": "Harshdeep Kaur, Arijit Singh",
+          "album": "Future Nostaligia"
+        },
+        {
+          "id": 1,
+          "songname": "Shivers ",
+          "singer": "Ed Sheeran",
+          "album": "Future Nostaligia"
         }
-      ],
-      "id": 1
+      ]
     },
     {
+      "id": 2,
       "playlistname": "newTwo",
+      "count": 5,
+      "user": "Ayushee shrivastava",
       "playlistItem": [
         {
           "id": 1,
           "songname": "anyting",
-          "singer": "KK"
+          "singer": "KK",
+          "album": "Future "
         },
         {
           "id": 2,
           "songname": "anyting",
-          "singer": "KK"
+          "singer": "KK",
+          "album": "Nostaligia"
         },
         {
           "id": 3,
           "songname": "anyting",
-          "singer": "Ed shreen"
+          "singer": "Ed shreen",
+          "album": "Ed shreen"
         },
         {
           "id": 4,
           "songname": "kuchbhi",
-          "singer": "Swift taylor"
+          "singer": "Swift taylor",
+          "album": "taylor"
+        },
+        {
+          "id": 2,
+          "songname": "Easy on Me",
+          "singer": "Adele",
+          "album": "Shivers"
         }
-      ],
-      "id": 2
+      ]
     },
     {
       "playlistname": "newThree",
+      "user": "Ayushee shrivastava",
+      "count": 5,
       "playlistItem": [
         {
           "id": 1,
           "songname": "anyting",
-          "singer": "KK"
+          "singer": "KK",
+          "album": "Happier Than ever"
         },
         {
           "id": 2,
           "songname": "anyting",
-          "singer": "KK"
+          "singer": "KK",
+          "album": " Nostaligia"
         },
         {
           "id": 3,
           "songname": "anyting",
-          "singer": "Ed shreen"
+          "singer": "Ed shreen",
+          "album": " Nostaligia"
         },
         {
           "id": 4,
           "songname": "kuchbhi",
-          "singer": "Swift taylor"
+          "singer": "Swift taylor",
+          "album": "Future"
         }
       ],
       "id": 3
     },
     {
       "playlistname": "newFour",
+      "user": "Pankaj",
+      "count": 4,
       "playlistItem": [
         {
           "id": 1,
           "songname": "anyting",
-          "singer": "KK"
+          "singer": "KK",
+          "album": "Adele"
         },
         {
           "id": 2,
           "songname": "anyting",
-          "singer": "KK"
+          "singer": "KK",
+          "album": "Future Nostaligia"
         },
         {
           "id": 3,
           "songname": "anyting",
-          "singer": "Ed shreen"
+          "singer": "Ed shreen",
+          "album": "Future Nostaligia"
         },
         {
           "id": 4,
           "songname": "kuchbhi",
-          "singer": "Swift taylor"
+          "singer": "Swift taylor",
+          "album": "Future Nostaligia"
         }
       ],
       "id": 4
-    },
-    {
-      "id": 2027,
-      "playlistname": "newFive",
-      "playlistItem": []
     }
   ]
 }

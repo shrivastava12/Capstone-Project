@@ -105,13 +105,13 @@ const Song = ({loadSong,addSong,songs,isAuthenticated}) => {
                         <form>
                             <div class="form-row">
                                 <div class="col">
-                                    <input type="text"
+                                    <input type="text"     required
                                     value={title}
                                     onChange={e => setTitle(e.target.value)} class="form-control" placeholder=" Song title"  />
                                 </div>
                                 <div class="col">
                                     <input 
-                                    type="text" 
+                                    type="text"     required
                                     value={album}
                                     onChange={e => setAlbum(e.target.value)} class="form-control" placeholder="Album" />
                                 </div>
@@ -119,24 +119,24 @@ const Song = ({loadSong,addSong,songs,isAuthenticated}) => {
                             <div class="form-row mt-2">
                                 <div class="col">
                                     <input 
-                                    value={singer}
+                                    value={singer}    required
                                     onChange={e => setSinger(e.target.value)} type="text" class="form-control" placeholder="Singer" />
                                 </div>
                                 <div class="col">
                                     <input 
-                                    value={songLength}
+                                    value={songLength}     required
                                     onChange={e => setSongLength(e.target.value)} type="text" class="form-control" placeholder="Song Length" />
                                 </div>
                             </div>
                             <div class="form-row mt-2">
                                 <div class="col">
                                     <input 
-                                    value={genre}
+                                    value={genre}     required
                                     onChange={e => setGenre(e.target.value)} type="text" class="form-control" placeholder="Genre" />
                                 </div>
                                 <div class="col">
                                     <input 
-                                    value={img}
+                                    value={img}     required
                                     onChange={e => setImg(e.target.value)} type="text" class="form-control" placeholder="Image url" />
                                 </div>
                             </div>

@@ -1,25 +1,38 @@
-const abc  = [
+const data = [
   {
-  "Album": "Shivers",
-  "Title": "Shivers s",
-  "Songlength": "3:27",
-  "Singer": "Ed Sheeran",
-  "Img": "https://pbs.twimg.com/media/E-Rt4hNXIAUJbLm.jpg",
-  "Genre": "Pop",
-  "id": 1
+  "id": 1,
+  "songname": "anyting",
+  "singer": "KK"
   },
   {
   "id": 2,
-  "Album": "Easy on Me",
-  "Title": "Easy on Me",
-  "Songlength": "3:44",
-  "Singer": "Adele",
-  "Img": "https://i.ytimg.com/vi/X-yIEMduRXk/maxresdefault.jpg",
-  "Genre": "Pop"
+  "songname": "anyting",
+  "singer": "KK"
+  },
+  {
+  "id": 3,
+  "songname": "anyting",
+  "singer": "Ed shreen"
+  },
+  {
+  "id": 4,
+  "songname": "kuchbhi",
+  "singer": "Swift taylor"
   }
-]
+  ]
+
+  const deleteone =  () => {
+   
+    return data.filter(item => item.id != 4)
+  }
+
+  console.log( data[Math.floor(Math.random()*data.length)])
+
+
+  // const newd =  [...data,{id:5,songname:"dontknow",singer:"me"}]
+
 // console.log( abc.find(ele => ele.email === "aayushe@gmail.com" && ele.password === "1234") )
-console.log(abc.find(ele => ele.Title === "Easy on Me"));
+// console.log(abc.find(ele => ele.Title === "Easy on Me"));
 // const bcd =  new Date();
 // console.log(bcd.getFullYear()+bcd.getMilliseconds())
 

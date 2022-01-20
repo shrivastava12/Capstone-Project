@@ -3,7 +3,8 @@ import { LOGIN_FAIL, LOGIN_SUCCESS, LOGOUT_SUCCESS, REGISTER_SUCCESS } from "../
 const initialState =  {
    
     isAuthenticated:false,
-    user:JSON.parse(localStorage.getItem('user'))
+    user:JSON.parse(localStorage.getItem('user')),
+    error:""
 }
 
 export default function(state = initialState,action){
@@ -14,27 +15,31 @@ export default function(state = initialState,action){
             return{
                 ...state,
                 isAuthenticated:true,
-                user:payload
+                user:payload,
+                error:""
             }
         case LOGIN_SUCCESS:
             localStorage.setItem('user',JSON.stringify(payload));
             return{
                 ...state,
                 isAuthenticated:true,
-                user:payload
+                user:payload,
+                error:""
             }
         case LOGIN_FAIL:
             return{
                 ...state,
                 isAuthenticated:false,
-                user:localStorage.removeItem('user')
+                user:localStorage.removeItem('user'),
+                error:payload
             }
         case LOGOUT_SUCCESS:
 
             return{
                 ...state,
                 isAuthenticated:false,
-                user:localStorage.removeItem('user')
+                user:localStorage.removeItem('user'),
+                error:""
             }
         default:
             return state;

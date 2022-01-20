@@ -4,7 +4,7 @@ import { Redirect } from "react-router-dom";
 import { login, register } from "../actions/authAction";
 import background from "../Images/background.png";
 
-const Login = ({ register, login, isAuthenticated }) => {
+const Login = ({ register, login, isAuthenticated,error }) => {
   const myStyle = {
     backgroundImage: `url(${background})`,
     height: "100vh",
@@ -53,6 +53,7 @@ const Login = ({ register, login, isAuthenticated }) => {
             }}
           >
             <div className="p-5 m-3 ">
+            <p style={{'color':'#fff'}}>{error}</p>
               <h2
                 className="text-center"
                 style={{
@@ -76,6 +77,7 @@ const Login = ({ register, login, isAuthenticated }) => {
               </h2>
 
               <form onSubmit={onhandleSubmit} className="mt-4">
+                
                 <label style={{ color: "#fff", margin: "0px" }}>Email</label>
                 <br />
                 <input
@@ -89,6 +91,7 @@ const Login = ({ register, login, isAuthenticated }) => {
                     width: "90%",
                   }}
                   type="text"
+                  required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
@@ -107,6 +110,7 @@ const Login = ({ register, login, isAuthenticated }) => {
                     color: "#fff",
                   }}
                   type="text"
+                  required
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                 />
@@ -190,6 +194,7 @@ const Login = ({ register, login, isAuthenticated }) => {
                       }}
                       type="text"
                       value={fname}
+                      required
                       onChange={(e) => setFname(e.target.value)}
                     />
                   </div>
@@ -207,6 +212,7 @@ const Login = ({ register, login, isAuthenticated }) => {
                         color: "#fff",
                       }}
                       type="text"
+                      required
                       value={lname}
                       onChange={(e) => setLname(e.target.value)}
                     />
@@ -228,6 +234,7 @@ const Login = ({ register, login, isAuthenticated }) => {
                         color: "#fff",
                       }}
                       type="text"
+                      required
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                     />
@@ -246,6 +253,7 @@ const Login = ({ register, login, isAuthenticated }) => {
                         color: "#fff",
                       }}
                       type="text"
+                      required
                       value={location}
                       onChange={(e) => setLocation(e.target.value)}
                     />
@@ -264,6 +272,7 @@ const Login = ({ register, login, isAuthenticated }) => {
                         color: "#fff",
                       }}
                       type="text"
+                      required
                       value={mobileNo}
                       onChange={(e) => setMobileNo(e.target.value)}
                     />
@@ -282,6 +291,7 @@ const Login = ({ register, login, isAuthenticated }) => {
                         color: "#fff",
                       }}
                       type="text"
+                      required
                       value={password}
                       onChange={(e) => setPassword(e.target.value)}
                     />
@@ -325,6 +335,7 @@ const Login = ({ register, login, isAuthenticated }) => {
 
 const mapStateToProps = (state) => ({
   isAuthenticated: state.auth.isAuthenticated,
+  error:state.auth.error
 });
 
 export default connect(mapStateToProps, { register, login })(Login);

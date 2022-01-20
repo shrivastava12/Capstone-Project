@@ -2,10 +2,23 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 import Carousel from "./Carousel";
 
+import Axios from 'axios';
 
 function DisplayCarousel({playlists}) {
 
   const history = useHistory();
+
+    const frequentlyVisited =  (id,count) => {
+      Axios.patch(`http://localhost:7000/playlist/${id}`,{
+        count:count+1
+      }).then((res) => {
+        console.log(res.data)
+        history.push(`/playlist-detail/${id}`)
+      }).catch((err) => {
+        console.log(err)
+      })
+    }
+  
 
   console.log('playlist',playlists)
   return (
@@ -38,9 +51,9 @@ function DisplayCarousel({playlists}) {
                   {item.playlistname}
                 </h2>
                 <p className="text-muted" style={{ color: "#fff" }}>
-                  Alex
+                  {item.user}
                 </p>
-                <button onClick={() => {history.push(`/playlist-detail/${item.id}`)}} style={{'color':'#fff'}} className="btn btn-outline-info btn-sm">View more</button>
+                <button onClick={() => frequentlyVisited(item.id,item.count) } style={{'color':'#fff'}} className="btn btn-outline-info btn-sm">View more</button>
               </div>
             </div>
             </div>

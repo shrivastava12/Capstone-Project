@@ -82,7 +82,7 @@ function Navs({ isAuthenticated, user, logout }) {
                 >
                   <CgProfile color="grey" size={25} />
                   <p style={{ color: "white" }}>
-                    {user.first_name + " " + user.last_name}
+                    { user && user.first_name + " " + user.last_name}
                   </p>
                 </span>
               </Link>
