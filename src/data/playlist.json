@@ -4,6 +4,8 @@
       "id": 1,
       "playlistname": "newOne",
       "count": 8,
+     
+      "user": "Ayushee shrivastava",
       "playlistItem": [
         {
           "id": 3,
@@ -28,7 +30,7 @@
     {
       "id": 2,
       "playlistname": "newTwo",
-      "count": 5,
+      "count": 6,
       "user": "Ayushee shrivastava",
       "playlistItem": [
         {
@@ -96,7 +98,7 @@
       "id": 3
     },
     {
-      "id": 4,
+      
       "playlistname": "newFour",
       "playlistItem": [
         {
@@ -130,6 +132,8 @@
           "album": "MoonChild Era"
         }
       ]
+     
+    
     }
   ]
 }
