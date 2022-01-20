@@ -70,7 +70,7 @@ function PlayList({loadPlayList,playlists}) {
                         <form>
                            
                            
-                            <input className="form-control" value={name} onChange={e => setName(e.target.value)}  type="text" placeholder="Playlist name" />
+                            <input className="form-control" value={name} onChange={e => setName(e.target.value)}  type="text" placeholder="Playlist name" style={{width:'140%'}} />
                          
                         </form>
                     </div>

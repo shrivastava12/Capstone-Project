@@ -4,7 +4,8 @@ import { useParams } from "react-router-dom";
 import Axios from "axios";
 import { connect } from "react-redux";
 import { loadSong } from "../actions/songAction";
-
+import { RiPlayListAddFill } from "react-icons/ri";
+import "./Playlistdetail.css";
 
 const PlaylistDetail = ({ songs, loadSong }) => {
   const { id } = useParams();
@@ -17,9 +18,9 @@ const PlaylistDetail = ({ songs, loadSong }) => {
   console.log("songs", songs);
   const [data, setData] = useState({});
   const [newArray, setNewArray] = useState([]);
-  const [song,setSong] = useState({});
-  const [name,setName] = useState('')
- 
+  const [song, setSong] = useState({});
+  const [name, setName] = useState("");
+
   const loadPlayListDetail = () => {
     Axios.get(`http://localhost:7000/playlist/${id}`)
       .then((res) => {
@@ -32,13 +33,16 @@ const PlaylistDetail = ({ songs, loadSong }) => {
       });
   };
 
-  const findSong =  () => {
-    console.log(name,'name')
-   let abc =  songs.find(ele => ele.Title.toUpperCase() === name.toUpperCase())
+  const findSong = () => {
+    console.log(name, "name");
+    let abc = songs.find(
+      (ele) => ele.Title.toUpperCase() === name.toUpperCase()
+    );
     setSong(abc);
-    console.log('abc',abc)
-  }
-//   console.log('songggggg',song)
+    console.log("abc", abc);
+  };
+  console.log('songggggg',song)
+  let arr = [];
   return (
     <div style={{ backgroundColor: "#31373D", width: "100%" }}>
       <div className="container">
@@ -51,7 +55,7 @@ const PlaylistDetail = ({ songs, loadSong }) => {
               />
             </div>
           </div>
-          <div className="col-lg-8 mt-4 ">
+          <div className="col-lg-4 mt-4 ">
             <div className="p-3">
               <h2
                 style={{ color: "white", fontSize: "60px", fontWeight: "bold" }}
@@ -70,9 +74,9 @@ const PlaylistDetail = ({ songs, loadSong }) => {
                 <input
                   type="text"
                   value={name}
-                  onChange={e => setName(e.target.value)}
+                  onChange={(e) => setName(e.target.value)}
                   style={{
-                    width: "45%",
+                    width: "65%",
                     padding: "5px",
                     border: "2px solid springgreen",
                     borderRadius: "16px",
@@ -80,18 +84,57 @@ const PlaylistDetail = ({ songs, loadSong }) => {
                   placeholder=" search song title"
                 />
                 <span></span>
-                <button onClick={findSong} className="btn btn-success ml-2 ">Search</button>
+                <button onClick={findSong} className="btn btn-success ml-2 ">
+                  Search
+                </button>
                 <br></br>
-             {
-                 song.Title && <ul class="list-group list-group-horizontal mt-2">
-                 <li style={{'width':'90%'}} class="list-group-item">{song.Title}</li>
-                 <li style={{'width':'100%'}} class="list-group-item">{song.Singer}</li>
-                 <li style={{'width':'100%'}} class="list-group-item text-center"><button className="btn btn-success btn-sm">Add to playList</button></li>
-                 </ul>
-             }
-               
+                {song.Title && (
+                  <ul class="list-group list-group-horizontal mt-2">
+                   <RiPlayListAddFill color="white"/> <li style={{ width: "90%" }} class="list-group-item">
+                      {song.Title}
+                    </li>
+                    <li style={{ width: "100%" }} class="list-group-item">
+                      {song.Singer}
+                    </li>
+                    <li
+                      style={{ width: "100%" }}
+                      class="list-group-item text-center"
+                    >
+                      <button className="btn btn-success btn-sm">
+                        Add to playList
+                      </button>
+                    </li>
+                  </ul>
+                )}
               </div>
             </div>
+          </div>
+          <div className="col-lg-4 mt-4">
+          <h3 style={{color:'gray'}} className="text-center">Recommendation</h3>
+                {
+                  
+                   songs.slice(0,4).map((item)=>{
+                    return(
+                      <div className="">
+                     
+                      <ul class="list-group list-group-flush ">
+                        <li
+                          class="list-group-item "
+                          style={{
+                            height: "20%",
+                            width: "64%",
+                            
+                          }}
+                        >
+                          {item.Title}
+                          <button className="btn btn-info btn-sm mx-2">Add</button>
+                        </li>
+                        
+                      </ul>
+                    </div>
+                    )
+                  })
+                }
           </div>
         </div>
         <hr color="#fff" />
