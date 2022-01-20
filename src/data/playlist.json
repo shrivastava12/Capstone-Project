@@ -3,7 +3,7 @@
     {
       "id": 1,
       "playlistname": "newOne",
-      "count": 7,
+      "count": 8,
       "playlistItem": [
         {
           "id": 3,
@@ -96,9 +96,8 @@
       "id": 3
     },
     {
+      "id": 4,
       "playlistname": "newFour",
-      "user": "Pankaj",
-      "count": 4,
       "playlistItem": [
         {
           "id": 1,
@@ -123,9 +122,14 @@
           "songname": "kuchbhi",
           "singer": "Swift taylor",
           "album": "Future Nostaligia"
+        },
+        {
+          "id": 10,
+          "songname": "Vibe",
+          "singer": "Diljit Dosanjh",
+          "album": "MoonChild Era"
         }
-      ],
-      "id": 4
+      ]
     }
   ]
 }
