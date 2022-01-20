@@ -3,7 +3,8 @@
     {
       "id": 1,
       "playlistname": "newOne",
-      "count": 7,
+      "count": 12,
+      "user": "Ayushee shrivastava",
       "playlistItem": [
         {
           "id": 3,
@@ -28,7 +29,7 @@
     {
       "id": 2,
       "playlistname": "newTwo",
-      "count": 5,
+      "count": 6,
       "user": "Ayushee shrivastava",
       "playlistItem": [
         {
@@ -126,6 +127,11 @@
         }
       ],
       "id": 4
+    },
+    {
+      "id": 2525,
+      "playlistname": "newSix",
+      "playlistItem": []
     }
   ]
 }
