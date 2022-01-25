@@ -27,7 +27,7 @@ function Features() {
                   alt="..."
                 />
                 <div className="card-body">
-                  <h2 className="text-center" style={{ color: "white" }}>
+                  <h2  data-testid = "manage" className="text-center" style={{ color: "white" }}>
                     Manage Songs
                   </h2>
                 </div>
@@ -49,7 +49,7 @@ function Features() {
                   alt="..."
                 />
                 <div className="card-body">
-                  <h2 className=" text-center" style={{ color: "white" }}>
+                  <h2  data-testid = "create" className=" text-center" style={{ color: "white" }}>
                     Create Playlist
                   </h2>
                 </div>
@@ -69,7 +69,7 @@ function Features() {
               <div className="card bg-dark" style={{'width':'18rem'}}>
                 <img src="https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=950" className="card-img-top" alt="share" />
                 <div className="card-body">
-                <h2 className="text-center" style={{'color':'white'}}>Share</h2>
+                <h2 data-testid = "share" className="text-center" style={{'color':'white'}}>Share</h2>
                 </div>
               </div>
             </div>

@@ -11,8 +11,8 @@ function KuchBhi() {
             </div>
           </div>
           <div className="col-lg-6 mt-5" style={{ height: "auto" }}>
-            <p className=" text-center" style={{'fontSize':'2.2rem'}}>
-            “Music is what tells us that the human race is greater than we realize.”
+            <p data-testid="testing1" className=" text-center" style={{'fontSize':'2.2rem'}}>
+            Music is what tells us that the human race is greater than we realize
             </p>
             <p className=" text-right" style={{'fontSize':'1.3rem'}}>― Napoleon Bonaparte</p>
           </div>

@@ -89,6 +89,7 @@ function Navs({ isAuthenticated, user, logout }) {
 
               <button
                 style={{ height: "28px" }}
+               
                 className="btn btn-light btn-sm ml-2"
                 onClick={logout}
               >
@@ -97,7 +98,7 @@ function Navs({ isAuthenticated, user, logout }) {
             </div>
           ) : (
             <Link to="/login">
-              <button className="btn btn-outline-light">Login/SignUp</button>
+              <button data-testid = 'loginButton' className="btn btn-outline-light">Login/SignUp</button>
             </Link>
           )}
         </div>

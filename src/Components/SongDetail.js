@@ -2,7 +2,7 @@ import Axios from "axios";
 import { useEffect, useState } from "react";
 import { connect } from "react-redux";
 import { useHistory } from "react-router-dom";
-import { Redirect } from "react-router-dom";
+
 import { useParams } from "react-router-dom";
 import "../App.css";
 

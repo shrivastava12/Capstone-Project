@@ -1,0 +1,348 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Creating Contact SnapShot 1`] = `
+<div>
+  <div
+    className="container p-4 mt-3 mb-3"
+    style={
+      Object {
+        "height": "auto",
+      }
+    }
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-sm-6"
+        style={
+          Object {
+            "height": "auto",
+          }
+        }
+      >
+        <div>
+          <img
+            alt="contact"
+            src="mail.svg"
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          />
+        </div>
+      </div>
+      <div
+        className="col-sm-6 p-3"
+        style={
+          Object {
+            "height": "auto",
+            "width": "300px",
+          }
+        }
+      >
+        <form>
+          <div
+            className=""
+          >
+            <label
+              className="form-label"
+              for="exampleInputEmail1"
+            >
+              Name
+            </label>
+            <input
+              aria-describedby="emailHelp"
+              className="form-control"
+              id="exampleInputEmail1"
+              onChange={[Function]}
+              type="text"
+              value=""
+            />
+          </div>
+          <div
+            className=""
+          >
+            <label
+              className="form-label"
+              for="exampleInputEmail1"
+            >
+              Email address
+            </label>
+            <input
+              aria-describedby="emailHelp"
+              className="form-control"
+              id="exampleInputEmail1"
+              name="email"
+              onChange={[Function]}
+              type="email"
+              value=""
+            />
+          </div>
+          <div
+            className=""
+          >
+            <label
+              className="form-label"
+              for="exampleInputPassword1"
+            >
+              Message
+            </label>
+            <textarea
+              aria-label="With textarea"
+              className="form-control"
+              name="message"
+              onChange={[Function]}
+              value=""
+            />
+          </div>
+          <button
+            className="btn btn-primary mt-2"
+            onClick={[Function]}
+            type="submit mt-4"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Creating home Snapshot 1`] = `
+Array [
+  <div
+    className="navbar_bg "
+    style={
+      Object {
+        "height": "auto",
+      }
+    }
+  >
+    <div
+      className="navbar_div "
+    >
+      <h1
+        className="navheading  h-100 d-flex justify-content-center align-items-center"
+        data-testid="heading1"
+      >
+        MUSIQUE
+      </h1>
+    </div>
+  </div>,
+  <div
+    style={
+      Object {
+        "height": "auto",
+      }
+    }
+  >
+    <div
+      className="container mt-5"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-lg-6 "
+          style={
+            Object {
+              "height": "auto",
+            }
+          }
+        >
+          <div
+            className=""
+          >
+            <img
+              alt="info_img"
+              className=""
+              height={300}
+              src="Music.svg"
+            />
+          </div>
+        </div>
+        <div
+          className="col-lg-6 mt-5"
+          style={
+            Object {
+              "height": "auto",
+            }
+          }
+        >
+          <p
+            className=" text-center"
+            data-testid="testing1"
+            style={
+              Object {
+                "fontSize": "2.2rem",
+              }
+            }
+          >
+            Music is what tells us that the human race is greater than we realize
+          </p>
+          <p
+            className=" text-right"
+            style={
+              Object {
+                "fontSize": "1.3rem",
+              }
+            }
+          >
+            ― Napoleon Bonaparte
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="mt-5"
+  >
+    <h1
+      className="text-center mt-2"
+      style={
+        Object {
+          "fontWeight": "bold",
+        }
+      }
+    >
+      Features
+    </h1>
+    <div
+      className="container p-3"
+      style={
+        Object {
+          "marginTop": "1rem",
+        }
+      }
+    >
+      <div
+        className="row p-5 "
+      >
+        <div
+          className="col-sm-4 mt-2"
+        >
+          <div
+            style={
+              Object {
+                "border": "1px black",
+                "display": "flex",
+                "flexDirection": "row",
+                "justifyContent": "center",
+              }
+            }
+          >
+            <div
+              className="card bg-dark"
+            >
+              <img
+                alt="..."
+                className="card-img-top"
+                src="https://images.pexels.com/photos/257904/pexels-photo-257904.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              />
+              <div
+                className="card-body"
+              >
+                <h2
+                  className="text-center"
+                  data-testid="manage"
+                  style={
+                    Object {
+                      "color": "white",
+                    }
+                  }
+                >
+                  Manage Songs
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-sm-4 mt-2"
+        >
+          <div
+            style={
+              Object {
+                "display": "flex",
+                "flexDirection": "row",
+                "justifyContent": "center",
+              }
+            }
+          >
+            <div
+              className="card bg-dark"
+            >
+              <img
+                alt="..."
+                className="card-img-top"
+                src="https://images.pexels.com/photos/4491533/pexels-photo-4491533.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              />
+              <div
+                className="card-body"
+              >
+                <h2
+                  className=" text-center"
+                  data-testid="create"
+                  style={
+                    Object {
+                      "color": "white",
+                    }
+                  }
+                >
+                  Create Playlist
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-sm-4 mt-2"
+        >
+          <div
+            style={
+              Object {
+                "display": "flex",
+                "flexDirection": "row",
+                "justifyContent": "center",
+              }
+            }
+          >
+            <div
+              className="card bg-dark"
+              style={
+                Object {
+                  "width": "18rem",
+                }
+              }
+            >
+              <img
+                alt="share"
+                className="card-img-top"
+                src="https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=950"
+              />
+              <div
+                className="card-body"
+              >
+                <h2
+                  className="text-center"
+                  data-testid="share"
+                  style={
+                    Object {
+                      "color": "white",
+                    }
+                  }
+                >
+                  Share
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;

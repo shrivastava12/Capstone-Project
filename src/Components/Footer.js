@@ -10,7 +10,7 @@ function Footer() {
         <div className="container">
           <div className="row p-4">
             <div className="col-lg-6">
-              <h2 style={{ color: "#fff" }} className="">
+              <h2 data-testid='service' style={{ color: "#fff" }} className="">
                 Service
               </h2>
               <input />
@@ -26,7 +26,7 @@ function Footer() {
               </button>
             </div>
             <div style={{ color: "#fff" }} className="col-lg-6">
-              <h2 className="mb-3">Contact Us</h2>
+              <h2 data-testid='contact' className="mb-3">Contact Us</h2>
               <p>Banglore,India</p>
               <p>+91 7479530699</p>
               <div className="d-flex flex-row">
