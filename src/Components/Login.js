@@ -92,6 +92,7 @@ const Login = ({ register, login, isAuthenticated,error }) => {
                   }}
                   type="text"
                   required
+                  name='email'
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
@@ -111,6 +112,7 @@ const Login = ({ register, login, isAuthenticated,error }) => {
                   }}
                   type="text"
                   required
+                  name='password'
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                 />

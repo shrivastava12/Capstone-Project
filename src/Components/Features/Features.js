@@ -23,7 +23,7 @@ function Features() {
               <div className="card bg-dark">
                 <img
                   src="https://images.pexels.com/photos/257904/pexels-photo-257904.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  class="card-img-top"
+                  className="card-img-top"
                   alt="..."
                 />
                 <div className="card-body">
@@ -42,13 +42,13 @@ function Features() {
                 justifyContent: "center",
               }}
             >
-              <div class="card bg-dark" >
+              <div className="card bg-dark" >
                 <img
                   src="https://images.pexels.com/photos/4491533/pexels-photo-4491533.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                  class="card-img-top"
+                  className="card-img-top"
                   alt="..."
                 />
-                <div class="card-body">
+                <div className="card-body">
                   <h2 className=" text-center" style={{ color: "white" }}>
                     Create Playlist
                   </h2>
@@ -66,9 +66,9 @@ function Features() {
             >
               
               
-              <div class="card bg-dark" style={{'width':'18rem'}}>
-                <img src="https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=950" class="card-img-top" alt="share" />
-                <div class="card-body">
+              <div className="card bg-dark" style={{'width':'18rem'}}>
+                <img src="https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=950" className="card-img-top" alt="share" />
+                <div className="card-body">
                 <h2 className="text-center" style={{'color':'white'}}>Share</h2>
                 </div>
               </div>

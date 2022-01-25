@@ -29,7 +29,7 @@
     {
       "id": 2,
       "playlistname": "newTwo",
-      "count": 7,
+      "count": 9,
       "user": "Ayushee shrivastava",
       "playlistItem": [
         {
@@ -100,7 +100,7 @@
       "playlistname": "newFour",
       "id": 4,
       "user": "Pankaj",
-      "count": 14,
+      "count": 15,
       "playlistItem": [
         {
           "id": 1,
@@ -155,9 +155,20 @@
           "songname": "Vibe",
           "singer": "Diljit Dosanjh",
           "album": "MoonChild Era"
+        },
+        {
+          "id": 10,
+          "songname": "Vibe",
+          "singer": "Diljit Dosanjh",
+          "album": "MoonChild Era"
         }
-      ],
-      "count": 3,
+      ]
+    },
+    {
+      "id": 2071,
+      "count": 0,
+      "playlistname": "badsah",
+      "playlistItem": [],
       "user": "Pankajshrivastava"
     }
   ]
