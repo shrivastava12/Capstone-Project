@@ -5,28 +5,58 @@ const data = [
   "singer": "KK"
   },
   {
-  "id": 2,
-  "songname": "anyting",
-  "singer": "KK"
-  },
-  {
-  "id": 3,
-  "songname": "anyting",
-  "singer": "Ed shreen"
-  },
-  {
   "id": 4,
   "songname": "kuchbhi",
   "singer": "Swift taylor"
-  }
+  },
+  {
+    "id": 4,
+    "songname": "kuchbhi",
+    "singer": "Swift taylor"
+    }
+    
   ]
 
-  const deleteone =  () => {
-   
-    return data.filter(item => item.id != 4)
-  }
+  const data1 = [
+    {
+    "id": 1,
+    "songname": "anyting",
+    "singer": "KK"
+    },
+    {
+    "id": 3,
+    "songname": "kuchbhi",
+    "singer": "Swift taylor"
+    }
+    ]
 
-  console.log( data[Math.floor(Math.random()*data.length)])
+    const findSong =  (name,nametwo) => {
+      let abc =  data.filter(item => item.songname === name || item.singer.replace(/ /g,'').toUpperCase() === nametwo.replace(/ /g,'').toUpperCase());
+      console.log(abc,'adsf')
+    }
+    findSong('kuchbhi','Swiftta');
+
+    // const findkuch  = id => {
+    //   data.map((item) => {
+    //       let anc= data1.find(x => x.id === item.id)
+    //       if(anc === undefined){
+    //         console.log('undef')
+    //       }else{
+    //         console.log('true')
+    //       }
+    //    })
+
+    // }
+  
+    // findkuch(5)
+    
+
+  // const deleteone =  () => {
+   
+  //   return data.filter(item => item.id != 4)
+  // }
+
+  // console.log( data[Math.floor(Math.random()*data.length)])
 
 
   // const newd =  [...data,{id:5,songname:"dontknow",singer:"me"}]

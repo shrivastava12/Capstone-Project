@@ -7,6 +7,10 @@ import  Axios  from "axios";
 import { useHistory } from "react-router-dom";
 import CarouselOne from "../Components/carousel/CarouselOne";
 import Charts from "../Components/Charts";
+import { toast } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
+import {ToastContainer} from "react-toastify"
+
 
 function PlayList({loadPlayList,playlists,isAuthenticated,user}) {
 
@@ -45,10 +49,15 @@ function PlayList({loadPlayList,playlists,isAuthenticated,user}) {
         console.log(res.data)
         loadPlayList();
         handleClose();
-        alert('PlayList added Successfully')
+        toast('PlayList Created',{
+          type:'success'
+        })
         
       }).catch((err) => {
         console.log(err)
+        toast('Something went wrong',{
+          type:'error'
+        })
       })
   }
  
@@ -57,7 +66,7 @@ function PlayList({loadPlayList,playlists,isAuthenticated,user}) {
  
     <div className="p-5" style={{ backgroundColor: "#fff" }}>
       
-  
+    <ToastContainer/>
   <div style={{'display':'flex','justifyContent':'space-between'}}> <h2 className="" style={{'color':'black'}}></h2>
     <button className="btn btn-dark " onClick={handleShow} >Create PlayList</button>
     </div>
@@ -85,21 +94,23 @@ function PlayList({loadPlayList,playlists,isAuthenticated,user}) {
                 </Modal.Header>
                 <Modal.Body>
                     <div style={{ 'display': 'flex', 'flexDirection': 'row' }} >
-                        <form>
+                        <form onSubmit={onSubmit}>
                            
                            
                             <input required className="form-control" value={name} onChange={e => setName(e.target.value)}  type="text" placeholder="Playlist name" style={{width:'140%'}} />
                             {/* <p className="mt-1">user: {user.first_name + "  " +user.last_name}</p> */}
+                            <Modal.Footer>
+                  
+                    <button  className='btn  btn-success btn-sm'>Submit</button>
+
+                </Modal.Footer>
                         </form>
                     </div>
-                </Modal.Body>
-                <Modal.Footer>
                     <button className='btn btn-primary btn-sm' onClick={handleClose}>
                         Close
                     </button>
-                    <button onClick={onSubmit} className='btn  btn-success btn-sm'>Submit</button>
-
-                </Modal.Footer>
+                </Modal.Body>
+               
             </Modal>
     </>
   );

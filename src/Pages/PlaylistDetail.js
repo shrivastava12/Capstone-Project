@@ -7,6 +7,10 @@ import { loadSong } from "../actions/songAction";
 import { RiPlayListAddFill } from "react-icons/ri";
 import "./Playlistdetail.css";
 import { useHistory } from "react-router-dom";
+import { toast } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
+import {ToastContainer} from "react-toastify"
+
 
 const PlaylistDetail = ({ songs, loadSong,isAuthenticated }) => {
   const { id } = useParams();
@@ -44,7 +48,9 @@ const PlaylistDetail = ({ songs, loadSong,isAuthenticated }) => {
       .then((res) => {
         if (res.status === 200) {
           loadPlayListDetail();
-          alert("Added Successfully!");
+          toast('Added Song to PlayList',{
+            type:'success'
+          })
           
         }
       })
@@ -90,23 +96,27 @@ const PlaylistDetail = ({ songs, loadSong,isAuthenticated }) => {
   const deletePlayListItem = (songId) => {
     if(isAuthenticated){
 
-  
-    const abcd = newArray.filter((item) => item.id != songId);
-    Axios.put(`http://localhost:7000/playlist/${id}`, {
-      id: id,
-      playlistname: data.playlistname,
-      playlistItem: abcd,
-    })
-      .then((res) => {
-        if (res.status === 200) {
-          loadPlayListDetail();
-          alert("Deleted Successfully");
-          //  setSong({});
-        }
+    const con =   window.confirm('Please Confrm Do you want to delete ?');
+    if(con === true){
+      const abcd = newArray.filter((item) => item.id != songId);
+      Axios.put(`http://localhost:7000/playlist/${id}`, {
+        id: id,
+        playlistname: data.playlistname,
+        playlistItem: abcd,
       })
-      .catch((err) => {
-        console.log(err);
-      });
+        .then((res) => {
+          if (res.status === 200) {
+            loadPlayListDetail();
+           
+          }
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    }else{
+      return;
+    }
+ 
     }else{
       history.push("/login");
     }
@@ -143,6 +153,7 @@ const PlaylistDetail = ({ songs, loadSong,isAuthenticated }) => {
 
   return (
     <div style={{ backgroundColor: "#31373D", width: "100%" }}>
+      <ToastContainer/>
       <div className="container">
         <div className="row">
           <div className="col-lg-4 mt-4">
@@ -215,20 +226,22 @@ const PlaylistDetail = ({ songs, loadSong,isAuthenticated }) => {
               </div>
             </div>
           </div>
-          <div className="col-lg-4 mt-4">
-            <h3 style={{ color: "gray" }} className="text-center">
-              Recommended
-            </h3>
-            {songs.slice(0, 4).map((item) => {
+          <div  className="col-lg-4 mt-4 ">
+           <div className=" overflow-auto onscroll">
+           {songs.map((item) => {
+             let check =  newArray.find(x => x.id === item.id)
+
               return (
                 <div class="list-group">
               <a href="#" style={{'display':'flex','justifyContent':'space-between','alignItems':'center','height':'45px'}} class="list-group-item list-group-item-action ">
-                <p>{item.Title}</p><button onClick={() =>  addSongToPlayList(item.id,item.Title,item.Singer,item.Album) } className="btn btn-success btn-sm">Add</button>
+                <p>{item.Title}</p><button onClick={() =>  addSongToPlayList(item.id,item.Title,item.Singer,item.Album) } disabled={check === undefined ? false : true} className="btn btn-success btn-sm">Add</button>
               </a>
              
             </div>
               );
             })}
+           </div>
+           
 
            
           </div>

@@ -1,130 +1,41 @@
 {
   "playlist": [
     {
-      "id": 1,
-      "playlistname": "newOne",
-      "count": 10,
-      "user": "Ayushee shrivastava",
-      "playlistItem": [
-        {
-          "id": 3,
-          "songname": "anyting",
-          "singer": "Ed shreen",
-          "album": "Easy on Me"
-        },
-        {
-          "id": 6,
-          "songname": "Zaalima",
-          "singer": "Harshdeep Kaur, Arijit Singh",
-          "album": "Future Nostaligia"
-        },
-        {
-          "id": 1,
-          "songname": "Shivers ",
-          "singer": "Ed Sheeran",
-          "album": "Future Nostaligia"
-        }
-      ]
+      "id": 2331,
+      "count": 1,
+      "playlistname": "sdfs",
+      "playlistItem": [],
+      "user": "Pankajshrivastava"
     },
     {
-      "id": 2,
-      "playlistname": "newTwo",
-      "count": 9,
+      "id": 2677,
       "user": "Ayushee shrivastava",
+      "playlistname": "testinggg",
       "playlistItem": [
-        {
-          "id": 1,
-          "songname": "anyting",
-          "singer": "KK",
-          "album": "Future "
-        },
-        {
-          "id": 2,
-          "songname": "anyting",
-          "singer": "KK",
-          "album": "Nostaligia"
-        },
-        {
-          "id": 3,
-          "songname": "anyting",
-          "singer": "Ed shreen",
-          "album": "Ed shreen"
-        },
-        {
-          "id": 4,
-          "songname": "kuchbhi",
-          "singer": "Swift taylor",
-          "album": "taylor"
-        },
         {
           "id": 2,
           "songname": "Easy on Me",
           "singer": "Adele",
-          "album": "Shivers"
-        }
-      ]
-    },
-    {
-      "playlistname": "newThree",
-      "user": "Ayushee shrivastava",
-      "count": 7,
-      "playlistItem": [
-        {
-          "id": 1,
-          "songname": "anyting",
-          "singer": "KK",
-          "album": "Happier Than ever"
+          "album": "Easy on Me"
         },
         {
-          "id": 2,
-          "songname": "anyting",
-          "singer": "KK",
-          "album": " Nostaligia"
-        },
-        {
-          "id": 3,
-          "songname": "anyting",
-          "singer": "Ed shreen",
-          "album": " Nostaligia"
-        },
-        {
-          "id": 4,
-          "songname": "kuchbhi",
-          "singer": "Swift taylor",
-          "album": "Future"
+          "id": 5,
+          "songname": "Ranjha",
+          "singer": "B Praak, Jasleen Royal, Anvita Dutt Guptan, Romy",
+          "album": "Shershaah"
         }
       ],
-      "id": 3
+      "count": 1
     },
     {
-      "playlistname": "newFour",
-      "id": 4,
-      "user": "Pankaj",
-      "count": 15,
+      "id": 2310,
+      "playlistname": "Ap Dj",
       "playlistItem": [
-        {
-          "id": 1,
-          "songname": "anyting",
-          "singer": "KK",
-          "album": "Adele"
-        },
         {
           "id": 2,
-          "songname": "anyting",
-          "singer": "KK",
-          "album": "Future Nostaligia"
-        },
-        {
-          "id": 3,
-          "songname": "anyting",
-          "singer": "Ed shreen",
-          "album": "Future Nostaligia"
-        },
-        {
-          "id": 4,
-          "songname": "kuchbhi",
-          "singer": "Swift taylor",
-          "album": "Future Nostaligia"
+          "songname": "Easy on Me",
+          "singer": "Adele",
+          "album": "Easy on Me"
         },
         {
           "id": 10,
@@ -132,42 +43,14 @@
           "singer": "Diljit Dosanjh",
           "album": "MoonChild Era"
         }
-      ]
+      ],
+      "count": 3,
+      "user": "Pankajshrivastava"
     },
     {
-      "id": 2084,
-      "playlistname": "honey singh",
-      "playlistItem": [
-        {
-          "id": 1,
-          "songname": "Shivers S",
-          "singer": "Ed Sheeran",
-          "album": "Shivers"
-        },
-        {
-          "id": 3,
-          "songname": "Levitating",
-          "singer": "Dua Lipa",
-          "album": "Future Nostaligia"
-        },
-        {
-          "id": 10,
-          "songname": "Vibe",
-          "singer": "Diljit Dosanjh",
-          "album": "MoonChild Era"
-        },
-        {
-          "id": 10,
-          "songname": "Vibe",
-          "singer": "Diljit Dosanjh",
-          "album": "MoonChild Era"
-        }
-      ]
-    },
-    {
-      "id": 2071,
-      "count": 1,
-      "playlistname": "badsah",
+      "id": 2328,
+      "count": 0,
+      "playlistname": "hello",
       "playlistItem": [],
       "user": "Pankajshrivastava"
     }

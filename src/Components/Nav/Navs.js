@@ -5,6 +5,9 @@ import { Link, Redirect } from "react-router-dom";
 import { connect } from "react-redux";
 import { logout } from "../../actions/authAction";
 import { CgProfile } from "react-icons/cg";
+import "react-toastify/dist/ReactToastify.css";
+import {ToastContainer} from "react-toastify"
+
 
 function Navs({ isAuthenticated, user, logout }) {
   // let handleClick = () =>{
