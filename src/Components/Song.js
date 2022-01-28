@@ -107,6 +107,27 @@ const Song = ({ loadSong, addSong, songs, isAuthenticated }) => {
               </button>
             </form>
           </div>
+
+{/* check box implemented here */}
+
+<div style={{'display':'flex'}}>
+<div className="form-check mr-2">
+  <input className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+  <label className="form-check-label" for="defaultCheck1">
+    Default checkbox
+  </label>
+</div>
+
+<div className="form-check">
+  <input className="form-check-input" type="checkbox" value="" id="defaultCheck2" />
+  <label className="form-check-label" for="defaultCheck2">
+    Disabled checkbox
+  </label>
+</div>
+</div>
+
+
+{/* end here */}
           <div className="mt-3">
             <button onClick={handleShow} className="btn btn-dark ">
               Add song
@@ -311,13 +332,16 @@ const Song = ({ loadSong, addSong, songs, isAuthenticated }) => {
                 <button type="submit" className="btn  btn-success btn-sm">
                   Submit
                 </button>
-                <button className="btn btn-primary btn-sm" onClick={handleClose}>
-                Close
-              </button>
+               
               </Modal.Footer>
              
             </form>
-           
+            <div style={{'float':'inline-end'}}>
+            <button  className="btn btn-primary btn-sm" onClick={handleClose}>
+                Close
+              </button>
+            </div>
+            
           </div>
         </Modal.Body>
       </Modal>

@@ -10,8 +10,8 @@
     {
       "id": 2677,
       "playlistname": "testinggg",
-      "count":"4",
-      "user":"Pankajshrivastava",
+      "count": "4",
+      "user": "Pankajshrivastava",
       "playlistItem": [
         {
           "id": 2,
@@ -44,7 +44,7 @@
           "album": "MoonChild Era"
         }
       ],
-      "count": 3,
+      "count": 4,
       "user": "Pankajshrivastava"
     },
     {
@@ -65,7 +65,14 @@
         }
       ],
       "count": null,
-      "user":"Pankajshrivastava"
+      "user": "Pankajshrivastava"
+    },
+    {
+      "id": 2480,
+      "count": 0,
+      "playlistname": "hbbb",
+      "playlistItem": [],
+      "user": "Pankajshrivastava"
     }
   ]
 }

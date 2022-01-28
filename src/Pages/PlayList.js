@@ -108,16 +108,20 @@ function PlayList({ loadPlayList, playlists, isAuthenticated, user }) {
               <Modal.Footer>
               <div style={{'marginLeft':'150px'}}>
                 <button className="btn  btn-success btn-sm ">Submit</button>
-                <button
+                
+                </div>
+              </Modal.Footer>
+              
+            </form>
+            <div>
+            <button
                   className="btn btn-primary btn-sm"
                   onClick={handleClose}
                 >
                   Close
                 </button>
-                </div>
-              </Modal.Footer>
-              
-            </form>
+            </div>
+            
           </div>
         </Modal.Body>
       </Modal>
