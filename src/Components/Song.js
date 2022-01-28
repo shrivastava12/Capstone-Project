@@ -24,6 +24,9 @@ const Song = ({ loadSong, addSong, songs, isAuthenticated }) => {
   const [searchText, setSearchText] = useState("");
   const [isSearch, setIsSearch] = useState(true);
   const [searchData,setSearchData] = useState([]);
+  const [isAlbum,setIsAlbum] = useState(false);
+  const [isSinger,setIsSinger] = useState(false);
+  const [isGenre,setIsGenre] = useState(false);
 
 
   const [show, setShow] = useState(false);
@@ -112,16 +115,31 @@ const Song = ({ loadSong, addSong, songs, isAuthenticated }) => {
 
 <div style={{'display':'flex'}}>
 <div className="form-check mr-2">
-  <input className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-  <label className="form-check-label" for="defaultCheck1">
-    Default checkbox
+  <input  style={{'height':'22px','width':'22px'}}  className="form-check-input bg-dark" type="checkbox" value={isAlbum}  onChange={e => {
+    let abc =  e.target.value
+    setIsAlbum(abc => !abc)
+  }} id="defaultCheck1" />
+  <label style={{'fontSize':'18px'}}  className="form-check-label ml-2" for="defaultCheck1">
+      Album
+  </label>
+</div>
+<div className="form-check  mr-2">
+  <input style={{'height':'22px','width':'22px'}} className="form-check-input bg-dark" type="checkbox" value={isSinger} onChange={e => {
+    let abc =  e.target.value
+    setIsSinger(abc => !abc)
+  }}id="defaultCheck1" />
+  <label style={{'fontSize':'18px'}} className="form-check-label ml-2" for="defaultCheck1">
+    Singer
   </label>
 </div>
 
-<div className="form-check">
-  <input className="form-check-input" type="checkbox" value="" id="defaultCheck2" />
-  <label className="form-check-label" for="defaultCheck2">
-    Disabled checkbox
+<div  className="form-check">
+  <input style={{'height':'22px','width':'22px','backgroundColor':'black'}} className="form-check-input  bg-dark" type="checkbox" onChange={e => {
+    let abc =  e.target.value
+    setIsGenre(abc => !abc)
+  }} value={isGenre} id="defaultCheck2" />
+  <label style={{'fontSize':'18px'}} className="form-check-label ml-2" for="defaultCheck2">
+   Genre
   </label>
 </div>
 </div>
@@ -167,7 +185,19 @@ const Song = ({ loadSong, addSong, songs, isAuthenticated }) => {
                         className="card-text text-center m-1"
                         style={{ fontSize: "13px", color: "#D3D3D3" }}
                       >
-                        {item.Singer}
+                       {isSinger && <>Singer : {item.Singer} </>}  
+                      </p>
+                      <p
+                        className="card-text text-center m-1"
+                        style={{ fontSize: "13px", color: "#D3D3D3" }}
+                      > {isAlbum && <> Album   : 
+                        {item.Album}</>}
+                      </p>
+                      <p
+                        className="card-text text-center m-1"
+                        style={{ fontSize: "13px", color: "#D3D3D3" }}
+                      >{isGenre && <>Genre   : 
+                        {item.Genre}</>}
                       </p>
                       <hr
                         style={{ backgroundColor: "#fff", marginTop: "-1.3px" }}
@@ -222,7 +252,19 @@ const Song = ({ loadSong, addSong, songs, isAuthenticated }) => {
                         className="card-text text-center m-1"
                         style={{ fontSize: "13px", color: "#D3D3D3" }}
                       >
-                        {item.Singer}
+                         {isSinger && <>Singer : {item.Singer} </>}
+                      </p>
+                      <p
+                        className="card-text text-center m-1"
+                        style={{ fontSize: "13px", color: "#D3D3D3" }}
+                      >
+                         {isAlbum && <>Album : {item.Album} </>}
+                      </p>
+                      <p
+                        className="card-text text-center m-1"
+                        style={{ fontSize: "13px", color: "#D3D3D3" }}
+                      >
+                         {isGenre && <>Genre : {item.Genre} </>}
                       </p>
                       <hr
                         style={{ backgroundColor: "#fff", marginTop: "-1.3px" }}
@@ -261,7 +303,7 @@ const Song = ({ loadSong, addSong, songs, isAuthenticated }) => {
         </Modal.Header>
         <Modal.Body>
           <div style={{ display: "flex", flexDirection: "row" }}>
-            <form >
+            <form onSubmit={onSubmit}>
               <div class="form-row">
                 <div class="col">
                   <input
@@ -336,12 +378,11 @@ const Song = ({ loadSong, addSong, songs, isAuthenticated }) => {
               </Modal.Footer>
              
             </form>
-            <div style={{'float':'inline-end'}}>
+            <div style={{'float':'inline-end',marginTop:'146px',marginLeft:'-12px'}}>
             <button  className="btn btn-primary btn-sm" onClick={handleClose}>
                 Close
               </button>
-            </div>
-            
+            </div>            
           </div>
         </Modal.Body>
       </Modal>

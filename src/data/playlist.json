@@ -64,7 +64,7 @@
           "album": "Future Nostaligia"
         }
       ],
-      "count": null,
+      "count": 1,
       "user": "Pankajshrivastava"
     },
     {
@@ -72,6 +72,38 @@
       "count": 0,
       "playlistname": "hbbb",
       "playlistItem": [],
+      "user": "Pankajshrivastava"
+    },
+    {
+      "id": 2569,
+      "playlistname": "abcdefgh",
+      "playlistItem": [
+        {
+          "id": 6,
+          "songname": "Zaalima",
+          "singer": "Harshdeep Kaur, Arijit Singh",
+          "album": "Raees"
+        },
+        {
+          "id": 10,
+          "songname": "Vibe",
+          "singer": "Diljit Dosanjh",
+          "album": "MoonChild Era"
+        }
+      ]
+    },
+    {
+      "id": 2089,
+      "playlistname": "testingggg",
+      "playlistItem": [
+        {
+          "id": 5,
+          "songname": "Ranjha",
+          "singer": "B Praak, Jasleen Royal, Anvita Dutt Guptan, Romy",
+          "album": "Shershaah"
+        }
+      ],
+      "count": 1,
       "user": "Pankajshrivastava"
     }
   ]

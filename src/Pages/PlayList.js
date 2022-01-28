@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
 import { loadPlayList } from "../actions/playlistAction";
-import DisplayCarousel from "../Components/carousel/DisplayCarousel";
 import Modal from "react-bootstrap/Modal";
 import Axios from "axios";
 import { useHistory } from "react-router-dom";
@@ -113,7 +112,7 @@ function PlayList({ loadPlayList, playlists, isAuthenticated, user }) {
               </Modal.Footer>
               
             </form>
-            <div>
+            <div style={{marginTop: '55px',marginLeft :'-5px'}}>
             <button
                   className="btn btn-primary btn-sm"
                   onClick={handleClose}

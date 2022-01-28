@@ -1,25 +1,26 @@
-import React from 'react';
+import React,{Suspense} from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import About from "./Pages/About";
-import Contact from "./Pages/Contact";
-import Home from "./Pages/Home";
-import Login from "./Pages/Login";
-import PlayList from "./Pages/PlayList";
-import Profile from "./Pages/Profile";
-import Song from "./Pages/Song";
-import SongDetail from "./Pages/SongDetail";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navs from "./Components/Nav/Navs";
+
 import Footer from "./Components/Footer";
 import Test from "./Pages/Test";
-import PlaylistDetail from "./Pages/PlaylistDetail";
 
-
+const PlaylistDetail = React.lazy(() => import( "./Pages/PlaylistDetail"))
+const SongDetail =  React.lazy(() => import("./Pages/SongDetail"))
+const Song =  React.lazy(() => import("./Pages/Song"))
+const Profile =  React.lazy(() => import('./Pages/Profile'))
+const PlayList = React.lazy(() => import('./Pages/PlayList'))
+const Login =  React.lazy(() => import('./Pages/Login'))
+const Contact =  React.lazy(() => import("./Pages/Contact"));
+const Home =  React.lazy(() => import('./Pages/Home'))
 
 function App() {
   return (
     <Router>
      {/* <Navbar/> */}
+     <Suspense fallback={<div>Loading....</div>}>
      <Navs/>
       <Switch>
         <Route exact path='/' component={Home} />
@@ -35,6 +36,7 @@ function App() {
         <Route exact path='/test' component={Test} />
       </Switch>
      <Footer/>
+     </Suspense>
     </Router>
   );
 }
