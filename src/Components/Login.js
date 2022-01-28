@@ -3,6 +3,8 @@ import { connect } from "react-redux";
 import { Redirect } from "react-router-dom";
 import { login, register } from "../actions/authAction";
 import background from "../Images/background.png";
+import UseUnsavedChangesWarning from "./UseUnsavedChangesWarning";
+
 
 const Login = ({ register, login, isAuthenticated,error }) => {
   const myStyle = {
@@ -19,19 +21,31 @@ const Login = ({ register, login, isAuthenticated,error }) => {
   const [email, setEmail] = useState("");
   const [mobileNo, setMobileNo] = useState("");
   const [password, setPassword] = useState("");
+  const [Prompt,setDirty,setPristine] = UseUnsavedChangesWarning();
 
   const onClick = () => {
     setISSignedIn(!isSignedIn);
   };
 
   const onhandleSubmit = (e) => {
+
     e.preventDefault();
+    setPristine();
     if (isSignedIn) {
       console.log("signed in");
       login(email, password);
+      setEmail("");
+      setPassword("");
+      
     } else {
       console.log("sign up");
       register(email, password, fname, lname, location, mobileNo);
+      setEmail("");
+      setFname("");
+      setLname("");
+      setMobileNo("");
+      setLocation("");
+      setPassword("");
     }
   };
 
@@ -41,6 +55,7 @@ const Login = ({ register, login, isAuthenticated,error }) => {
 
   return (
     <div style={myStyle}>
+      {Prompt}
       {isSignedIn ? (
         <div className="  h-100 d-flex justify-content-center align-items-center ">
           <div
@@ -94,7 +109,10 @@ const Login = ({ register, login, isAuthenticated,error }) => {
                   required
                   name='email'
                   value={email}
-                  onChange={(e) => setEmail(e.target.value)}
+                  onChange={(e) => {
+                    setEmail(e.target.value)
+                    setDirty();
+                  } }
                 />
                 <br />
                 <br />
@@ -114,7 +132,10 @@ const Login = ({ register, login, isAuthenticated,error }) => {
                   required
                   name='password'
                   value={password}
-                  onChange={(e) => setPassword(e.target.value)}
+                  onChange={(e) =>{
+                    setPassword(e.target.value);
+                    setDirty();
+                  } }
                 />
 
                 <div className="text-center mt-5">
@@ -197,7 +218,10 @@ const Login = ({ register, login, isAuthenticated,error }) => {
                       type="text"
                       value={fname}
                       required
-                      onChange={(e) => setFname(e.target.value)}
+                      onChange={(e) =>{
+                        setFname(e.target.value)
+                        setDirty();
+                      } }
                     />
                   </div>
                   <div className="form-group col-md-6">
@@ -216,7 +240,10 @@ const Login = ({ register, login, isAuthenticated,error }) => {
                       type="text"
                       required
                       value={lname}
-                      onChange={(e) => setLname(e.target.value)}
+                      onChange={(e) => {
+                        setLname(e.target.value)
+                        setDirty();
+                      } }
                     />
                   </div>
                 </div>
@@ -238,7 +265,10 @@ const Login = ({ register, login, isAuthenticated,error }) => {
                       type="text"
                       required
                       value={email}
-                      onChange={(e) => setEmail(e.target.value)}
+                      onChange={(e) => {
+                        setEmail(e.target.value)
+                        setDirty();
+                      }}
                     />
                   </div>
                   <div className="form-group col-md-6">
@@ -257,7 +287,10 @@ const Login = ({ register, login, isAuthenticated,error }) => {
                       type="text"
                       required
                       value={location}
-                      onChange={(e) => setLocation(e.target.value)}
+                      onChange={(e) =>{
+                        setLocation(e.target.value)
+                        setDirty();
+                      } }
                     />
                   </div>
                   <div className="form-group col-md-6">
@@ -276,7 +309,10 @@ const Login = ({ register, login, isAuthenticated,error }) => {
                       type="text"
                       required
                       value={mobileNo}
-                      onChange={(e) => setMobileNo(e.target.value)}
+                      onChange={(e) => {
+                          setMobileNo(e.target.value)
+                          setDirty();
+                      }}
                     />
                   </div>
                   <div className="form-group col-md-6">
@@ -295,7 +331,10 @@ const Login = ({ register, login, isAuthenticated,error }) => {
                       type="text"
                       required
                       value={password}
-                      onChange={(e) => setPassword(e.target.value)}
+                      onChange={(e) => {
+                        setPassword(e.target.value)
+                        setDirty();
+                      } }
                     />
                   </div>
                 </div>

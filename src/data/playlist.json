@@ -9,7 +9,6 @@
     },
     {
       "id": 2677,
-      "user": "Ayushee shrivastava",
       "playlistname": "testinggg",
       "playlistItem": [
         {
@@ -24,8 +23,7 @@
           "singer": "B Praak, Jasleen Royal, Anvita Dutt Guptan, Romy",
           "album": "Shershaah"
         }
-      ],
-      "count": 1
+      ]
     },
     {
       "id": 2310,
@@ -49,10 +47,22 @@
     },
     {
       "id": 2328,
-      "count": 0,
       "playlistname": "hello",
-      "playlistItem": [],
-      "user": "Pankajshrivastava"
+      "playlistItem": [
+        {
+          "id": 2,
+          "songname": "Easy on Me",
+          "singer": "Adele",
+          "album": "Easy on Me"
+        },
+        {
+          "id": 3,
+          "songname": "Levitating",
+          "singer": "Dua Lipa",
+          "album": "Future Nostaligia"
+        }
+      ],
+      "count": null
     }
   ]
 }

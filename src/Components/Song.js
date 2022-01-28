@@ -9,6 +9,7 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 
+
 const Song = ({ loadSong, addSong, songs, isAuthenticated }) => {
   useEffect(() => {
     loadSong();
@@ -61,10 +62,16 @@ const Song = ({ loadSong, addSong, songs, isAuthenticated }) => {
     addSong(album, title, songLength, singer, img, genre);
     loadSong();
     handleClose();
-
+    setIsSearch(true);
     toast("Added song Successfully", {
       type: "success",
     });
+    setAlbum('');
+    setTitle('');
+    setSongLength('');
+    setSinger('');
+    setImg('');
+    setGenre('');
   };
 
   return (
