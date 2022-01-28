@@ -233,7 +233,7 @@ const Song = ({ loadSong, addSong, songs, isAuthenticated }) => {
         </Modal.Header>
         <Modal.Body>
           <div style={{ display: "flex", flexDirection: "row" }}>
-            <form onSubmit={onSubmit}>
+            <form >
               <div class="form-row">
                 <div class="col">
                   <input
@@ -304,11 +304,13 @@ const Song = ({ loadSong, addSong, songs, isAuthenticated }) => {
                 <button type="submit" className="btn  btn-success btn-sm">
                   Submit
                 </button>
-              </Modal.Footer>
-              <button className="btn btn-primary btn-sm" onClick={handleClose}>
+                <button className="btn btn-primary btn-sm" onClick={handleClose}>
                 Close
               </button>
+              </Modal.Footer>
+             
             </form>
+           
           </div>
         </Modal.Body>
       </Modal>
