@@ -10,8 +10,8 @@
     {
       "id": 2677,
       "playlistname": "testinggg",
-      "count":"4",
-      "user":"Pankajshrivastava",
+      "count": "41",
+      "user": "Pankajshrivastava",
       "playlistItem": [
         {
           "id": 2,
@@ -64,8 +64,8 @@
           "album": "Future Nostaligia"
         }
       ],
-      "count": null,
-      "user":"Pankajshrivastava"
+      "count": 1,
+      "user": "Pankajshrivastava"
     }
   ]
 }

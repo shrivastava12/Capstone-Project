@@ -106,18 +106,21 @@ function PlayList({ loadPlayList, playlists, isAuthenticated, user }) {
               />
               {/* <p className="mt-1">user: {user.first_name + "  " +user.last_name}</p> */}
               <Modal.Footer>
-              <div style={{'marginLeft':'150px'}}>
+              <div>
                 <button className="btn  btn-success btn-sm ">Submit</button>
-                <button
+               
+                </div>
+              </Modal.Footer>
+             
+            </form>
+            <div style={{marginTop: '55px'}}>
+              <button
                   className="btn btn-primary btn-sm"
                   onClick={handleClose}
                 >
                   Close
                 </button>
-                </div>
-              </Modal.Footer>
-              
-            </form>
+              </div>
           </div>
         </Modal.Body>
       </Modal>

@@ -311,13 +311,15 @@ const Song = ({ loadSong, addSong, songs, isAuthenticated }) => {
                 <button type="submit" className="btn  btn-success btn-sm">
                   Submit
                 </button>
-                <button className="btn btn-primary btn-sm" onClick={handleClose}>
-                Close
-              </button>
+                  
               </Modal.Footer>
              
             </form>
-           
+            <div style={{marginTop : '147px',marginLeft:'-10px'}}>
+            <button className="btn btn-primary btn-sm" onClick={handleClose}>
+                Close
+            </button>   
+            </div>
           </div>
         </Modal.Body>
       </Modal>
