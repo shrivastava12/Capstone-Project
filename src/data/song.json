@@ -71,13 +71,13 @@
       "Genre": "Bhangra"
     },
     {
-      "id": 10,
       "Album": "MoonChild Era",
       "Title": "Vibe",
       "Songlength": "2:35",
-      "Singer": "Diljit Dosanjh",
+      "Singer": "Diljit Dosanjh man",
       "Img": "https://play-lh.googleusercontent.com/k5eHiOSJKPOYoHITJdF9reVhEQoMKBwk0EYknLlP6WtX40VtRi5nEaONVt5EGJOx9CQ",
-      "Genre": "HipHop/Bhangra"
+      "Genre": "HipHop/Bhangra",
+      "id": 10
     },
     {
       "id": 11,

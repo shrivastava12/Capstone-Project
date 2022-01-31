@@ -2,16 +2,12 @@
   "playlist": [
     {
       "id": 2331,
-      "count": 1,
       "playlistname": "sdfs",
-      "playlistItem": [],
-      "user": "Pankajshrivastava"
+      "playlistItem": []
     },
     {
       "id": 2677,
       "playlistname": "testinggg",
-      "count": "4",
-      "user": "Pankajshrivastava",
       "playlistItem": [
         {
           "id": 2,
@@ -20,10 +16,10 @@
           "album": "Easy on Me"
         },
         {
-          "id": 5,
-          "songname": "Ranjha",
-          "singer": "B Praak, Jasleen Royal, Anvita Dutt Guptan, Romy",
-          "album": "Shershaah"
+          "id": 4,
+          "songname": "Chaka Chak",
+          "singer": "A.R Rehman , Shreya Ghoshal",
+          "album": "Atrangi Re"
         }
       ]
     },

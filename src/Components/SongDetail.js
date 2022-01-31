@@ -5,7 +5,8 @@ import { useHistory } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import { toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
-import {ToastContainer} from "react-toastify"
+import {ToastContainer} from "react-toastify";
+import UseUnsavedChangesWarning from './UseUnsavedChangesWarning';
 
 
 import "../App.css";
@@ -26,7 +27,8 @@ const SongDetail = ({ isAuthenticated }) => {
   const [img, setImg] = useState("");
   const [genre, setGenre] = useState("");
   const [isEdit, setIsEdit] = useState(true);
-  
+  const [Prompt,setDirty,setPristine] =  UseUnsavedChangesWarning();
+
 
 
   const fetchSongDetail = () => {
@@ -107,6 +109,7 @@ const SongDetail = ({ isAuthenticated }) => {
 
   return (
     <div className="image-box " style={{ height: "100%" }}>
+      {Prompt}
       <ToastContainer/>
       <div
         class="image-box__background"
@@ -166,7 +169,10 @@ const SongDetail = ({ isAuthenticated }) => {
                   type="text"
                   disabled={isEdit}
                   value={title}
-                  onChange={(e) => setTitle(e.target.value)}
+                  onChange={(e) => {
+                    setTitle(e.target.value);
+                    setDirty();
+                  } }
                   style={{
                     border: isEdit ? 'none' :'',
                     backgroundColor: "transparent",
@@ -183,7 +189,11 @@ const SongDetail = ({ isAuthenticated }) => {
                   placeholder="Singer"
                   disabled={isEdit}
                   value={singer}
-                  onChange={(e) => setSinger(e.target.value)}
+                  onChange={(e) => {
+                    setTitle(e.target.value);
+                    setDirty();
+
+                  } }
                   style={{
                     border: isEdit ? 'none' :'',
                     backgroundColor: "transparent",
@@ -207,7 +217,10 @@ const SongDetail = ({ isAuthenticated }) => {
                       placeholder="album"
                       disabled={isEdit}
                       value={album}
-                      onChange={(e) => setAlbum(e.target.value)}
+                      onChange={(e) => {
+                        setAlbum(e.target.value);
+                        setDirty();
+                      }}
                       style={{
                         border: isEdit ? 'none' :'',
                         backgroundColor: "transparent",
@@ -224,7 +237,10 @@ const SongDetail = ({ isAuthenticated }) => {
                       disabled={isEdit}
                       placeholder="img"
                       value={img}
-                      onChange={(e) => setImg(e.target.value)}
+                      onChange={(e) => {
+                        setImg(e.target.value);
+                        setDirty();
+                      } }
                       style={{
                         border: isEdit ? 'none' :'',
                         backgroundColor: "transparent",
@@ -243,7 +259,10 @@ const SongDetail = ({ isAuthenticated }) => {
                       placeholder="song length"
                       disabled={isEdit}
                       value={songLength}
-                      onChange={(e) => setSongLength(e.target.value)}
+                      onChange={(e) => {
+                        setSongLength(e.target.value);
+                        setDirty();
+                      } }
                       style={{
                         border: isEdit ? 'none' :'',
                         backgroundColor: "transparent",
@@ -260,7 +279,10 @@ const SongDetail = ({ isAuthenticated }) => {
                       placeholder="Genre"
                       disabled={isEdit}
                       value={genre}
-                      onChange={(e) => setGenre(e.target.value)}
+                      onChange={(e) => {
+                        setGenre(e.target.value);
+                        setDirty();
+                      } }
                       style={{
                         border: isEdit ? 'none' :'',
                         backgroundColor: "transparent",

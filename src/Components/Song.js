@@ -85,7 +85,7 @@ const Song = ({ loadSong, addSong, songs, isAuthenticated }) => {
           style={{
             display: "flex",
             alignItems: "center",
-            justifyContent: "space-between",
+            justifyContent: 'space-between',
           }}
         >
           <div className="mt-3">
